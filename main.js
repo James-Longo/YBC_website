@@ -95,8 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const timeline = document.getElementById('timeline');
   if (timeline) {
     timeline.addEventListener('wheel', (evt) => {
-      evt.preventDefault();
-      timeline.scrollLeft += evt.deltaY;
+      if (evt.deltaY !== 0) {
+        timeline.scrollLeft += evt.deltaY;
+      }
     });
   }
 });
