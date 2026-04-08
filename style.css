@@ -198,7 +198,8 @@ nav {
 }
 
 .timeline-item {
-  min-width: 320px;
+  width: 280px;
+  aspect-ratio: 1 / 1;
   flex-shrink: 0;
   background: white;
   border-radius: 8px;
@@ -210,6 +211,7 @@ nav {
   flex-direction: column;
   overflow: hidden;
   text-align: center;
+  justify-content: space-between; /* Space header and content */
 }
 
 .timeline-item:hover {
@@ -227,7 +229,11 @@ nav {
 }
 
 .timeline-content {
-  padding: 1.75rem;
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline-content h3 {
