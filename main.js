@@ -67,23 +67,23 @@ async function fetchData() {
 }
 
 function setupFocusObserver() {
-  const container = document.getElementById('timeline');
+  const timeline = document.getElementById('timeline');
   const items = document.querySelectorAll('.timeline-node');
   
-  const observerOptions = {
-    root: container,
-    threshold: 0.6,
-    rootMargin: '0px -40% 0px -40%'
-  };
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+      // Toggle 'active' class based on intersection with the center strip
       if (entry.isIntersecting) {
-        items.forEach(i => i.classList.remove('active'));
         entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
       }
     });
-  }, observerOptions);
+  }, {
+    root: timeline,
+    threshold: 0, 
+    rootMargin: '0px -48% 0px -48%' // extremely tight center line for mobile precision
+  });
 
   items.forEach(item => observer.observe(item));
 }
