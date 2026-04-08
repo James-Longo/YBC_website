@@ -49,7 +49,6 @@ async function fetchData() {
           <div class="timeline-date">${report.meta.date || 'Recent Visit'}</div>
           <div class="timeline-content">
             <h3>${report.Name}</h3>
-            <p>View the field checklist and sightings from this trip on eBird.</p>
           </div>
         `;
         timeline.appendChild(item);
