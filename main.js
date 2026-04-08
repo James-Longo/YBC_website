@@ -22,7 +22,6 @@ async function fetchData() {
     const data = await response.text();
     const results = Papa.parse(data, { header: true, skipEmptyLines: true });
     
-    // Enroll and sort (Newest first)
     const reports = results.data
       .filter(row => row.Name && !row.Name.includes('#Social'))
       .map(row => {
@@ -39,25 +38,54 @@ async function fetchData() {
 
     if (reports.length > 0) {
       timeline.innerHTML = '';
-      reports.forEach(report => {
-        const item = document.createElement('a');
-        item.href = report.Link;
-        item.target = '_blank';
-        item.className = 'timeline-item';
+      reports.forEach((report, index) => {
+        const node = document.createElement('div');
+        node.className = `timeline-node ${index === 0 ? 'active' : ''}`;
         
-        item.innerHTML = `
-          <div class="timeline-date">${report.meta.date || 'Recent Visit'}</div>
-          <div class="timeline-content">
+        node.innerHTML = `
+          <div class="node-card">
+            <span class="node-date">${report.meta.date || 'Recent Visit'}</span>
             <h3>${report.Name}</h3>
           </div>
+          <div class="dot"></div>
         `;
-        timeline.appendChild(item);
+        
+        node.addEventListener('click', () => {
+          window.open(report.Link, '_blank');
+        });
+        
+        timeline.appendChild(node);
       });
+      
+      // Setup focus observer
+      setupFocusObserver();
     }
   } catch (error) {
     console.error('Error:', error);
     timeline.innerHTML = '<p>Check back soon for more reports.</p>';
   }
+}
+
+function setupFocusObserver() {
+  const container = document.getElementById('timeline');
+  const items = document.querySelectorAll('.timeline-node');
+  
+  const observerOptions = {
+    root: container,
+    threshold: 0.6,
+    rootMargin: '0px -40% 0px -40%'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        items.forEach(i => i.classList.remove('active'));
+        entry.target.classList.add('active');
+      }
+    });
+  }, observerOptions);
+
+  items.forEach(item => observer.observe(item));
 }
 
 document.addEventListener('DOMContentLoaded', () => {

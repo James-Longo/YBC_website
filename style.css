@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
 
 :root {
-  /* eBird Official Palette */
   --ebird-blue: #385B75;
   --ebird-yellow: #F8E500;
   --ebird-text: #2E261F;
@@ -9,18 +8,10 @@
   --ebird-gray: #F4F4F4;
   --ebird-border: #E5E5E5;
   --ebird-green: #36824B;
-  --ebird-red: #B31B1B;
-  
-  --primary: var(--ebird-blue);
-  --accent: var(--ebird-yellow);
-  --text: var(--ebird-text);
-  --text-dim: #555555;
-  --bg: var(--ebird-bg);
-  --section-bg: var(--ebird-gray);
   
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-  --transition: all 0.2s ease;
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.12);
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 * {
@@ -32,8 +23,8 @@
 body {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.6;
-  color: var(--text);
-  background: var(--bg);
+  color: var(--ebird-text);
+  background: var(--ebird-bg);
   overflow-x: hidden;
 }
 
@@ -41,10 +32,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  text-align: center; /* Centering text by default */
+  text-align: center;
 }
 
-/* Header & Nav - Centered */
 header {
   background: var(--ebird-blue);
   color: white;
@@ -60,191 +50,155 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .logo {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -0.5px;
   text-decoration: none;
   color: white;
 }
 
-.logo span {
-  color: white; /* Removed yellow highlight */
-}
+.logo span { color: white; }
 
-.nav-links {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-links a {
+.btn-primary {
+  background: var(--ebird-green);
   color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: var(--transition);
-}
-
-.nav-links a:hover {
-  color: var(--ebird-yellow);
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.8rem;
+  padding: 0.6rem 1.5rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 700;
-  cursor: pointer;
-  border: none;
-  font-size: 0.9rem;
   text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
-.btn-primary, .btn-secondary {
-  background: var(--ebird-green);
-  color: white;
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-  background: #2b6a3d;
-}
-
-.btn-outline {
-  border: 2px solid var(--ebird-blue);
-  color: var(--ebird-blue);
-  background: transparent;
-}
-
-.btn-outline:hover {
-  background: var(--ebird-blue);
-  color: white;
-}
-
-/* Sections */
+/* Timeline Components */
 .section {
-  padding: 3rem 0;
-}
-
-.section-bg {
-  background: var(--ebird-gray);
-}
-
-.section-header {
-  margin-bottom: 1.5rem;
-}
-
-#instagram {
-  padding-top: 5rem;
+  padding: 4rem 0;
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--ebird-blue);
-  margin-bottom: 1.2rem;
+  margin-bottom: 3rem;
 }
 
-.section-header .meta {
-  color: var(--ebird-green);
-  text-transform: uppercase;
+/* The Horizontal Timeline Track */
+.timeline-viewer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+/* THE LINE */
+.timeline-viewer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--ebird-border);
+  z-index: 1;
+}
+
+.timeline-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 0;
+  padding: 0 45%; /* Padding to allow first/last items to center */
+  scroll-snap-type: x mandatory;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+.timeline-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar Chrome/Safari */
+}
+
+.timeline-node {
+  flex: 0 0 300px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  opacity: 0.3;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.timeline-node.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* THE DOT */
+.dot {
+  width: 16px;
+  height: 16px;
+  background: var(--ebird-blue);
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--ebird-border);
+  margin: 20px 0;
+  transition: var(--transition);
+}
+
+.active .dot {
+  background: var(--ebird-green);
+  box-shadow: 0 0 0 6px rgba(54, 130, 75, 0.2);
+  transform: scale(1.3);
+}
+
+/* Content Box inside the Node */
+.node-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--ebird-border);
+  box-shadow: var(--shadow-sm);
+  width: 260px;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.active .node-card {
+  box-shadow: var(--shadow-md);
+  border-color: var(--ebird-blue);
+}
+
+.node-date {
+  font-size: 0.8rem;
   font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 1.5px;
-  display: block;
+  color: var(--ebird-blue);
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
+  display: block;
+}
+
+.node-card h3 {
+  font-size: 1.1rem;
+  color: var(--ebird-text);
+  line-height: 1.3;
+}
+
+/* Instagram Styles */
+#instagram {
+  padding: 4rem 0;
+  background: var(--ebird-gray);
 }
 
 .insta-container {
   display: flex;
   justify-content: center;
-  padding: 0 0 2rem; /* No top padding */
-  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
-
-.insta-container blockquote {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Horizontal Timeline - Centered Content */
-.timeline {
-  display: flex;
-  overflow-x: auto;
-  gap: 2.5rem;
-  padding: 0 0 2rem; /* No top padding */
-  scroll-behavior: smooth;
-  position: relative;
-  justify-content: flex-start; /* Keeps scrollable flow but content inside is centered */
-}
-
-/* Custom Scrollbar for centered look */
-.timeline::-webkit-scrollbar {
-  height: 8px;
-}
-
-.timeline::-webkit-scrollbar-track {
-  background: #eee;
-}
-
-.timeline::-webkit-scrollbar-thumb {
-  background: var(--ebird-blue);
-  border-radius: 4px;
-}
-
-.timeline-item {
-  width: 220px;
-  aspect-ratio: 1 / 1;
-  flex-shrink: 0;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid var(--ebird-border);
-  box-shadow: var(--shadow-sm);
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  text-align: center;
-  justify-content: space-between;
-}
-
-.timeline-item:hover {
-  border-color: var(--ebird-blue);
-  box-shadow: var(--shadow-md);
-}
-
-.timeline-date {
-  background: var(--ebird-blue);
-  color: white;
-  padding: 0.6rem 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.timeline-content {
-  padding: 1rem;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeline-content h3 {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  color: var(--ebird-blue);
-}
-
-.timeline-content p {
-  font-size: 0.9rem;
-  color: var(--text-dim);
-}
-
-
-
