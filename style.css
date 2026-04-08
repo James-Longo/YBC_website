@@ -92,8 +92,10 @@ header {
 .timeline-viewer {
   position: relative;
   width: 100%;
+  height: 350px;
   display: flex;
   align-items: center;
+  overflow-y: visible; /* Allow magnification headroom */
 }
 
 /* THE LINE */
@@ -126,7 +128,7 @@ header {
 }
 
 .timeline-node {
-  flex: 0 0 300px;
+  flex: 0 0 210px;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -145,30 +147,30 @@ header {
 
 /* THE DOT */
 .dot {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background: var(--ebird-blue);
-  border: 3px solid white;
+  border: 2px solid white;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--ebird-border);
-  margin: 20px 0;
+  box-shadow: 0 0 0 3px var(--ebird-border);
+  margin: 15px 0;
   transition: var(--transition);
 }
 
 .active .dot {
   background: var(--ebird-green);
-  box-shadow: 0 0 0 6px rgba(54, 130, 75, 0.2);
+  box-shadow: 0 0 0 5px rgba(54, 130, 75, 0.2);
   transform: scale(1.3);
 }
 
 /* Content Box inside the Node */
 .node-card {
   background: white;
-  padding: 1rem;
-  border-radius: 12px;
+  padding: 0.75rem;
+  border-radius: 10px;
   border: 1px solid var(--ebird-border);
   box-shadow: var(--shadow-sm);
-  width: 220px;
+  width: 155px;
   aspect-ratio: 1 / 1;
   pointer-events: none;
   transition: var(--transition);
@@ -185,18 +187,18 @@ header {
 }
 
 .node-date {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--ebird-blue);
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   display: block;
 }
 
 .node-card h3 {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--ebird-text);
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 /* Instagram Styles */
