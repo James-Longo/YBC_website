@@ -54,18 +54,28 @@ header {
   background: var(--ebird-green);
   color: white;
   text-decoration: none;
-  padding: 0.75rem 0;
+  padding: 0.85rem 0;
   display: block;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.85rem;
-  letter-spacing: 1px;
-  transition: var(--transition);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-bottom: 3px solid rgba(0,0,0,0.1);
 }
 
 .donate-bar:hover {
-  background: #2e6f40; /* Slightly darker eBird green */
+  background: #2d7a42;
+  filter: brightness(1.1);
+  letter-spacing: 2px;
+  transform: scale(1.02);
+}
+
+.donate-bar:active {
+  transform: scale(0.98);
+  filter: brightness(1.2);
 }
 
 .logo {
