@@ -140,6 +140,10 @@ nav {
   margin-bottom: 1.5rem;
 }
 
+#instagram {
+  padding-top: 5rem;
+}
+
 .section-header h2 {
   font-size: 2.5rem;
   color: var(--ebird-blue);
