@@ -198,7 +198,7 @@ nav {
 }
 
 .timeline-item {
-  width: 280px;
+  width: 220px;
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
   background: white;
@@ -211,11 +211,10 @@ nav {
   flex-direction: column;
   overflow: hidden;
   text-align: center;
-  justify-content: space-between; /* Space header and content */
+  justify-content: space-between;
 }
 
 .timeline-item:hover {
-  transform: none; /* Removed floating */
   border-color: var(--ebird-blue);
   box-shadow: var(--shadow-md);
 }
@@ -223,8 +222,8 @@ nav {
 .timeline-date {
   background: var(--ebird-blue);
   color: white;
-  padding: 0.6rem 1rem;
-  font-size: 0.85rem;
+  padding: 0.6rem 0.5rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -237,8 +236,8 @@ nav {
 }
 
 .timeline-content h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
   color: var(--ebird-blue);
 }
 
