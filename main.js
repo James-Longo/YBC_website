@@ -96,8 +96,57 @@ document.addEventListener('DOMContentLoaded', () => {
   if (timeline) {
     timeline.addEventListener('wheel', (evt) => {
       if (evt.deltaY !== 0) {
+        evt.preventDefault();
         timeline.scrollLeft += evt.deltaY;
       }
+    }, { passive: false });
+
+    // Click-and-Hold Navigation
+    const prevBtn = document.getElementById('scroll-prev');
+    const nextBtn = document.getElementById('scroll-next');
+    let scrollInterval;
+    let mouseDownTime;
+
+    const startContinuousScroll = (direction) => {
+      stopScrolling();
+      scrollInterval = setInterval(() => {
+        timeline.scrollBy({ left: direction * 1, behavior: 'auto' });
+      }, 16);
+    };
+
+    const stopScrolling = () => {
+      clearInterval(scrollInterval);
+      scrollInterval = null;
+    };
+
+    [prevBtn, nextBtn].forEach(btn => {
+      const direction = btn.id === 'scroll-prev' ? -1 : 1;
+      
+      btn.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        mouseDownTime = Date.now();
+        // Delay continuous scroll start slightly
+        setTimeout(() => {
+          if (mouseDownTime) startContinuousScroll(direction);
+        }, 200);
+      });
+
+      btn.addEventListener('mouseup', (e) => {
+        e.preventDefault();
+        const elapsed = Date.now() - mouseDownTime;
+        mouseDownTime = null;
+        stopScrolling();
+
+        // If it was a quick tap, do a discrete jump
+        if (elapsed < 200) {
+          timeline.scrollBy({ left: direction * 210, behavior: 'smooth' });
+        }
+      });
+      
+      btn.addEventListener('mouseleave', () => {
+        mouseDownTime = null;
+        stopScrolling();
+      });
     });
   }
 });

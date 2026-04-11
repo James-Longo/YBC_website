@@ -211,6 +211,49 @@ header {
   line-height: 1.2;
 }
 
+/* Nav Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: white;
+  border: 1px solid var(--ebird-border);
+  border-radius: 50%;
+  color: var(--ebird-blue);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.nav-btn:hover {
+  background: var(--ebird-blue);
+  color: white;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.nav-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.nav-btn.prev { left: 10px; }
+.nav-btn.next { right: 10px; }
+
+/* Hide nav buttons on mobile */
+@media (max-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+}
+
 #instagram {
   padding: 4rem 0;
   background: var(--ebird-gray);
