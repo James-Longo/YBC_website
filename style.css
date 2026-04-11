@@ -211,10 +211,35 @@ header {
   line-height: 1.2;
 }
 
-/* Instagram Styles */
 #instagram {
   padding: 4rem 0;
   background: var(--ebird-gray);
+}
+
+#affiliation {
+  background: white;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--ebird-border);
+  text-align: center;
+}
+
+.affiliation-text {
+  font-size: 1.1rem;
+  color: var(--ebird-text);
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.affiliation-text a {
+  color: var(--ebird-blue);
+  text-decoration: underline;
+  text-decoration-color: rgba(56, 91, 117, 0.3);
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.affiliation-text a:hover {
+  text-decoration-color: var(--ebird-blue);
 }
 
 .insta-container {
