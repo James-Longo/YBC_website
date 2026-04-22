@@ -46,8 +46,44 @@ header {
 .top-bar {
   background: var(--ebird-blue);
   color: white;
-  padding: 1.5rem 0;
-  text-align: center;
+  padding: 1rem 0;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.join-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--ebird-green);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: var(--transition);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.join-btn::before {
+  content: '🐦';
+  font-size: 1.2rem;
+}
+
+.join-btn:hover {
+  background: #2d6d3e;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
 }
 
 .donate-bar {
