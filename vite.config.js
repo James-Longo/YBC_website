@@ -8,6 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         tripReports: resolve(__dirname, 'trip-reports/index.html'),
         lifeList: resolve(__dirname, 'life-list/index.html'),
+        rsvp: resolve(__dirname, 'rsvp/index.html'),
       },
     },
   },

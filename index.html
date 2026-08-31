@@ -23,7 +23,7 @@
           <a href="https://app.99pledges.com/fund/birdathon2027/ybc-birdathon" class="donate-btn" target="_blank" rel="noopener">Donate</a>
           <nav class="main-nav" aria-label="Main">
             <a href="https://forms.gle/kpizSSjbhjwtRof4A" target="_blank" rel="noopener">Join</a>
-            <a href="#outings">RSVP</a>
+            <a href="/rsvp/">RSVP</a>
             <a href="/trip-reports/" class="nav-more">Trip Reports</a>
             <a href="/life-list/" class="nav-more">Life List</a>
             <a href="https://www.instagram.com/hc_youngbirdersclub/" class="nav-more" target="_blank" rel="noopener">Instagram</a>
@@ -38,7 +38,7 @@
       <nav id="side-menu" class="side-menu" aria-label="Menu" hidden>
         <button class="menu-close" type="button" aria-label="Close menu">&times;</button>
         <a href="https://forms.gle/kpizSSjbhjwtRof4A" target="_blank" rel="noopener">Join</a>
-        <a href="#outings">RSVP</a>
+        <a href="/rsvp/">RSVP</a>
         <a href="/trip-reports/">Trip Reports</a>
         <a href="/life-list/">Life List</a>
         <a href="https://www.instagram.com/hc_youngbirdersclub/" target="_blank" rel="noopener">Instagram</a>
@@ -59,7 +59,10 @@
             <p class="stats-empty">Loading stats…</p>
           </div>
           <p id="stats-footnote" class="stats-footnote"></p>
-          <a href="/trip-reports/" class="stats-btn">All Trip Reports</a>
+          <div class="stats-actions">
+            <a href="/rsvp/" class="stats-btn stats-btn--primary">RSVP for an Outing</a>
+            <a href="/trip-reports/" class="stats-btn">All Trip Reports</a>
+          </div>
         </div>
 
         <div class="hero-media">
@@ -86,18 +89,6 @@
         </div>
       </section>
 
-      <!-- Upcoming Outings / RSVP Section -->
-      <section id="outings" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Upcoming Outings</h2>
-          </div>
-          <div id="outings-list" class="outings-grid">
-            <p class="outings-empty">Loading outings…</p>
-          </div>
-        </div>
-      </section>
-
     </main>
 
     <footer class="site-footer">
@@ -109,7 +100,6 @@
     <a href="https://forms.gle/kpizSSjbhjwtRof4A" class="join-btn" target="_blank">Join Now</a>
 
     <script type="module" src="/nav.js"></script>
-    <script type="module" src="/rsvp.js"></script>
     <script type="module" src="/stats.js"></script>
   </body>
 </html>

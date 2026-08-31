@@ -307,9 +307,14 @@ body.menu-open {
   margin: 0.25rem 0 1.25rem;
 }
 
-.stats-btn {
-  align-self: flex-start;
+.stats-actions {
   margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.stats-btn {
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -323,6 +328,17 @@ body.menu-open {
 .stats-btn:hover {
   background: white;
   color: var(--ebird-blue);
+}
+
+.stats-btn--primary {
+  background: var(--ebird-green);
+  border-color: var(--ebird-green);
+}
+
+.stats-btn--primary:hover {
+  background: #2d6d3e;
+  border-color: #2d6d3e;
+  color: white;
 }
 
 /* The stats panel sets the hero's height; the embed is positioned absolutely so it
