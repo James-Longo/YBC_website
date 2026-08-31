@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Reports | Hancock County Young Birders Club</title>
+    <meta name="description" content="Every outing the Hancock County Young Birders Club has taken, with links to the eBird trip reports." />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <span class="logo-mark" aria-hidden="true">🐦</span>
+          <span class="logo-text">
+            <span class="logo-top">Hancock County</span>
+            <span class="logo-main">Young Birders Club</span>
+          </span>
+        </a>
+        <div class="header-right">
+          <a href="https://app.99pledges.com/fund/birdathon2027/ybc-birdathon" class="donate-btn" target="_blank" rel="noopener">Donate</a>
+          <nav class="main-nav" aria-label="Main">
+            <a href="https://forms.gle/kpizSSjbhjwtRof4A" target="_blank" rel="noopener">Join</a>
+            <a href="/#outings">RSVP</a>
+            <a href="/trip-reports/" aria-current="page">Trip Reports</a>
+            <a href="https://www.instagram.com/hc_youngbirdersclub/" target="_blank" rel="noopener">Instagram</a>
+            <a href="http://www.downeastaudubon.org/" target="_blank" rel="noopener">Audubon</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="reports-page">
+      <div class="reports-banner">
+        <div class="reports-inner">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a></nav>
+          <h1>Trip Reports</h1>
+        </div>
+      </div>
+
+      <div class="reports-inner">
+        <div class="reports-stat">
+          <span id="reports-count" class="reports-stat-count">–</span>
+          <span class="reports-stat-label">Trip Reports</span>
+        </div>
+        <ul id="reports-list" class="reports-list">
+          <li class="reports-loading">Loading trip reports…</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Hancock County Young Birders Club · a project of the <a href="http://www.downeastaudubon.org/" target="_blank" rel="noopener">Downeast Chapter of Maine Audubon</a></p>
+      </div>
+    </footer>
+
+    <a href="https://forms.gle/kpizSSjbhjwtRof4A" class="join-btn" target="_blank">Join Now</a>
+
+    <script type="module" src="../reports.js"></script>
+  </body>
+</html>
