@@ -7,38 +7,47 @@
     <meta name="description" content="Discover the Hancock County Young Birders Club (YBC), exploring nature and protecting birds in Maine." />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="top-bar">
-        <div class="container">
-          <a href="#" class="logo">Hancock County Young Birders <span>Club</span></a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <span class="logo-mark" aria-hidden="true">🐦</span>
+          <span class="logo-text">
+            <span class="logo-top">Hancock County</span>
+            <span class="logo-main">Young Birders Club</span>
+          </span>
+        </a>
+        <div class="header-right">
+          <a href="https://app.99pledges.com/fund/birdathon2027/ybc-birdathon" class="donate-btn" target="_blank" rel="noopener">Donate</a>
+          <nav class="main-nav" aria-label="Main">
+            <a href="https://forms.gle/kpizSSjbhjwtRof4A" target="_blank" rel="noopener">Join</a>
+            <a href="#outings">RSVP</a>
+            <a href="/trip-reports/">Trip Reports</a>
+            <a href="https://www.instagram.com/hc_youngbirdersclub/" target="_blank" rel="noopener">Instagram</a>
+            <a href="http://www.downeastaudubon.org/" target="_blank" rel="noopener">Audubon</a>
+          </nav>
         </div>
       </div>
-      <a href="https://app.99pledges.com/fund/birdathon2026/ybc" class="donate-bar" target="_blank">
-        Click here to donate
-      </a>
     </header>
 
     <main>
-      <!-- Affiliation Section -->
-      <section id="affiliation">
-        <div class="container">
-          <p class="affiliation-text">
-            We are a project of the 
-            <a href="http://www.downeastaudubon.org/" target="_blank" rel="noopener">Downeast Chapter of Maine Audubon</a>
-          </p>
-        </div>
-      </section>
-
-      <!-- Instagram Section -->
-      <section id="instagram">
-        <div class="container">
-          <div class="section-header">
-            <h2>Follow us on Instagram!</h2>
+      <!-- Hero: stats panel + Instagram -->
+      <section id="hero" class="hero">
+        <div class="stats-panel">
+          <div class="stats-heading">
+            <h1>Club Stats</h1>
+            <span id="stats-since" class="stats-since">Hancock County, Maine</span>
           </div>
-          <div class="insta-container">
+          <div id="stats-grid" class="stats-grid">
+            <p class="stats-empty">Loading stats…</p>
+          </div>
+          <p id="stats-footnote" class="stats-footnote"></p>
+          <a href="/trip-reports/" class="stats-btn">All Trip Reports</a>
+        </div>
+
+        <div class="hero-media">
+          <div class="insta-embed">
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/hc_youngbirdersclub/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
               <div style="padding:16px;">
                 <a href="https://www.instagram.com/hc_youngbirdersclub/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -54,29 +63,36 @@
             </blockquote>
             <script async src="//www.instagram.com/embed.js"></script>
           </div>
+          <a href="https://www.instagram.com/hc_youngbirdersclub/" class="media-caption" target="_blank" rel="noopener">
+            <strong>Follow us on Instagram</strong> <span>@hc_youngbirdersclub</span>
+            <span class="media-caption-right">A project of the Downeast Chapter of Maine Audubon</span>
+          </a>
         </div>
       </section>
 
-      <!-- Timeline Section -->
-      <section id="reports" class="section">
+      <!-- Upcoming Outings / RSVP Section -->
+      <section id="outings" class="section">
         <div class="container">
           <div class="section-header">
-            <h2>eBird Trip Reports</h2>
+            <h2>Upcoming Outings</h2>
           </div>
-          
-          <div class="timeline-viewer">
-            <button class="nav-btn prev" id="scroll-prev" aria-label="Scroll left">&#10094;</button>
-            <div id="timeline" class="timeline-scroll-container">
-              <!-- Timeline nodes will be injected here -->
-            </div>
-            <button class="nav-btn next" id="scroll-next" aria-label="Scroll right">&#10095;</button>
+          <div id="outings-list" class="outings-grid">
+            <p class="outings-empty">Loading outings…</p>
           </div>
         </div>
       </section>
+
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Hancock County Young Birders Club · a project of the <a href="http://www.downeastaudubon.org/" target="_blank" rel="noopener">Downeast Chapter of Maine Audubon</a></p>
+      </div>
+    </footer>
 
     <a href="https://forms.gle/kpizSSjbhjwtRof4A" class="join-btn" target="_blank">Join Now</a>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/rsvp.js"></script>
+    <script type="module" src="/stats.js"></script>
   </body>
 </html>
