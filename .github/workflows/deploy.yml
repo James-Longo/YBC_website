@@ -4,6 +4,9 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["main"]
+  # Refresh eBird stats every Monday at 6:00 AM Eastern (10:00 UTC during daylight time).
+  schedule:
+    - cron: "0 10 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -31,6 +34,15 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Pulls club-wide numbers from every eBird trip report in the outings sheet.
+      # If eBird is unreachable, the committed public/stats.json is used as a fallback.
+      - name: Refresh eBird stats
+        continue-on-error: true
+        run: python3 scrape_ebird.py
       - name: Build
         run: npm run build
       - name: Setup Pages
