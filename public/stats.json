@@ -650,5 +650,1503 @@
       "species": 19,
       "checklists": 1
     }
+  ],
+  "lifeList": [
+    {
+      "code": "sursco",
+      "name": "Surf Scoter",
+      "sci": "Melanitta perspicillata",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "blksco2",
+      "name": "Black Scoter",
+      "sci": "Melanitta americana",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "ribgul",
+      "name": "Ring-billed Gull",
+      "sci": "Larus delawarensis",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "amhgul1",
+      "name": "American Herring Gull",
+      "sci": "Larus smithsonianus",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "comloo",
+      "name": "Common Loon",
+      "sci": "Gavia immer",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "doccor",
+      "name": "Double-crested Cormorant",
+      "sci": "Nannopterum auritum",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "grbher3",
+      "name": "Great Blue Heron",
+      "sci": "Ardea herodias",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "turvul",
+      "name": "Turkey Vulture",
+      "sci": "Cathartes aura",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "yebsap",
+      "name": "Yellow-bellied Sapsucker",
+      "sci": "Sphyrapicus varius",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "dowwoo",
+      "name": "Downy Woodpecker",
+      "sci": "Dryobates pubescens",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "eawpew",
+      "name": "Eastern Wood-Pewee",
+      "sci": "Contopus virens",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "easpho",
+      "name": "Eastern Phoebe",
+      "sci": "Sayornis phoebe",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "reevir1",
+      "name": "Red-eyed Vireo",
+      "sci": "Vireo olivaceus",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "blujay",
+      "name": "Blue Jay",
+      "sci": "Cyanocitta cristata",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "amecro",
+      "name": "American Crow",
+      "sci": "Corvus brachyrhynchos",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "bkcchi",
+      "name": "Black-capped Chickadee",
+      "sci": "Poecile atricapillus",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "treswa",
+      "name": "Tree Swallow",
+      "sci": "Tachycineta bicolor",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "barswa",
+      "name": "Barn Swallow",
+      "sci": "Hirundo rustica",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "grycat",
+      "name": "Gray Catbird",
+      "sci": "Dumetella carolinensis",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "easblu",
+      "name": "Eastern Bluebird",
+      "sci": "Sialia sialis",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "amerob",
+      "name": "American Robin",
+      "sci": "Turdus migratorius",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "cedwax",
+      "name": "Cedar Waxwing",
+      "sci": "Bombycilla cedrorum",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "amegfi",
+      "name": "American Goldfinch",
+      "sci": "Spinus tristis",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "chispa",
+      "name": "Chipping Sparrow",
+      "sci": "Spizella passerina",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "whtspa",
+      "name": "White-throated Sparrow",
+      "sci": "Zonotrichia albicollis",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "sonspa",
+      "name": "Song Sparrow",
+      "sci": "Melospiza melodia",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "boboli",
+      "name": "Bobolink",
+      "sci": "Dolichonyx oryzivorus",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "ovenbi1",
+      "name": "Ovenbird",
+      "sci": "Seiurus aurocapilla",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "bawwar",
+      "name": "Black-and-white Warbler",
+      "sci": "Mniotilta varia",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "comyel",
+      "name": "Common Yellowthroat",
+      "sci": "Geothlypis trichas",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "amered",
+      "name": "American Redstart",
+      "sci": "Setophaga ruticilla",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "norpar",
+      "name": "Northern Parula",
+      "sci": "Setophaga americana",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "yelwar1",
+      "name": "Northern Yellow Warbler",
+      "sci": "Setophaga aestiva",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "chswar",
+      "name": "Chestnut-sided Warbler",
+      "sci": "Setophaga pensylvanica",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "btnwar",
+      "name": "Black-throated Green Warbler",
+      "sci": "Setophaga virens",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "norcar",
+      "name": "Northern Cardinal",
+      "sci": "Cardinalis cardinalis",
+      "date": "2025-06-23",
+      "outing": "YBC 1",
+      "tripId": "388162"
+    },
+    {
+      "code": "mallar3",
+      "name": "Mallard",
+      "sci": "Anas platyrhynchos",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "commer",
+      "name": "Common Merganser",
+      "sci": "Mergus merganser",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "baleag",
+      "name": "Bald Eagle",
+      "sci": "Haliaeetus leucocephalus",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "gockin",
+      "name": "Golden-crowned Kinglet",
+      "sci": "Regulus satrapa",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "winwre3",
+      "name": "Winter Wren",
+      "sci": "Troglodytes hiemalis",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "herthr",
+      "name": "Hermit Thrush",
+      "sci": "Catharus guttatus",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "eastow",
+      "name": "Eastern Towhee",
+      "sci": "Pipilo erythrophthalmus",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "naswar",
+      "name": "Nashville Warbler",
+      "sci": "Leiothlypis ruficapilla",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "magwar",
+      "name": "Magnolia Warbler",
+      "sci": "Setophaga magnolia",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "bkbwar",
+      "name": "Blackburnian Warbler",
+      "sci": "Setophaga fusca",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "yerwar",
+      "name": "Yellow-rumped Warbler",
+      "sci": "Setophaga coronata",
+      "date": "2025-07-01",
+      "outing": "YBC 2",
+      "tripId": "390888"
+    },
+    {
+      "code": "wooduc",
+      "name": "Wood Duck",
+      "sci": "Aix sponsa",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "rocpig",
+      "name": "Rock Pigeon",
+      "sci": "Columba livia",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "moudov",
+      "name": "Mourning Dove",
+      "sci": "Zenaida macroura",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "osprey",
+      "name": "Osprey",
+      "sci": "Pandion haliaetus",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "brwhaw",
+      "name": "Broad-winged Hawk",
+      "sci": "Buteo platypterus",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "rebnut",
+      "name": "Red-breasted Nuthatch",
+      "sci": "Sitta canadensis",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "houspa",
+      "name": "House Sparrow",
+      "sci": "Passer domesticus",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "purfin",
+      "name": "Purple Finch",
+      "sci": "Haemorhous purpureus",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "redcro",
+      "name": "Red Crossbill",
+      "sci": "Loxia curvirostra",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "daejun",
+      "name": "Dark-eyed Junco",
+      "sci": "Junco hyemalis",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "nstspa",
+      "name": "Nelson's Sparrow",
+      "sci": "Ammospiza nelsoni",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "swaspa",
+      "name": "Swamp Sparrow",
+      "sci": "Melospiza georgiana",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "rewbla",
+      "name": "Red-winged Blackbird",
+      "sci": "Agelaius phoeniceus",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "btbwar",
+      "name": "Black-throated Blue Warbler",
+      "sci": "Setophaga caerulescens",
+      "date": "2025-07-07",
+      "outing": "YBC 3",
+      "tripId": "392527"
+    },
+    {
+      "code": "rthhum",
+      "name": "Ruby-throated Hummingbird",
+      "sci": "Archilochus colubris",
+      "date": "2025-07-12",
+      "outing": "YBC 4",
+      "tripId": "394525"
+    },
+    {
+      "code": "shbdow",
+      "name": "Short-billed Dowitcher",
+      "sci": "Limnodromus griseus",
+      "date": "2025-07-12",
+      "outing": "YBC 4",
+      "tripId": "394525"
+    },
+    {
+      "code": "laugul",
+      "name": "Laughing Gull",
+      "sci": "Leucophaeus atricilla",
+      "date": "2025-07-12",
+      "outing": "YBC 4",
+      "tripId": "394525"
+    },
+    {
+      "code": "comter",
+      "name": "Common Tern",
+      "sci": "Sterna hirundo",
+      "date": "2025-07-12",
+      "outing": "YBC 4",
+      "tripId": "394525"
+    },
+    {
+      "code": "wiltur",
+      "name": "Wild Turkey",
+      "sci": "Meleagris gallopavo",
+      "date": "2025-07-14",
+      "outing": "YBC 5",
+      "tripId": "394621"
+    },
+    {
+      "code": "bongul",
+      "name": "Bonaparte's Gull",
+      "sci": "Chroicocephalus philadelphia",
+      "date": "2025-07-14",
+      "outing": "YBC 5",
+      "tripId": "394621"
+    },
+    {
+      "code": "belkin1",
+      "name": "Belted Kingfisher",
+      "sci": "Megaceryle alcyon",
+      "date": "2025-07-14",
+      "outing": "YBC 5",
+      "tripId": "394621"
+    },
+    {
+      "code": "buhvir",
+      "name": "Blue-headed Vireo",
+      "sci": "Vireo solitarius",
+      "date": "2025-07-14",
+      "outing": "YBC 5",
+      "tripId": "394621"
+    },
+    {
+      "code": "comeid",
+      "name": "Common Eider",
+      "sci": "Somateria mollissima",
+      "date": "2025-07-21",
+      "outing": "YBC 6",
+      "tripId": "396639"
+    },
+    {
+      "code": "atlpuf",
+      "name": "Atlantic Puffin",
+      "sci": "Fratercula arctica",
+      "date": "2025-07-21",
+      "outing": "YBC 6",
+      "tripId": "396639"
+    },
+    {
+      "code": "blkgui",
+      "name": "Black Guillemot",
+      "sci": "Cepphus grylle",
+      "date": "2025-07-21",
+      "outing": "YBC 6",
+      "tripId": "396639"
+    },
+    {
+      "code": "gbbgul",
+      "name": "Great Black-backed Gull",
+      "sci": "Larus marinus",
+      "date": "2025-07-21",
+      "outing": "YBC 6",
+      "tripId": "396639"
+    },
+    {
+      "code": "lcspet",
+      "name": "Leach's Storm-Petrel",
+      "sci": "Hydrobates leucorhous",
+      "date": "2025-07-21",
+      "outing": "YBC 6",
+      "tripId": "396639"
+    },
+    {
+      "code": "comrav",
+      "name": "Common Raven",
+      "sci": "Corvus corax",
+      "date": "2025-07-21",
+      "outing": "YBC 6",
+      "tripId": "396639"
+    },
+    {
+      "code": "savspa",
+      "name": "Savannah Sparrow",
+      "sci": "Passerculus sandwichensis",
+      "date": "2025-07-21",
+      "outing": "YBC 6",
+      "tripId": "396639"
+    },
+    {
+      "code": "semplo",
+      "name": "Semipalmated Plover",
+      "sci": "Charadrius semipalmatus",
+      "date": "2025-07-28",
+      "outing": "YBC 7",
+      "tripId": "398214"
+    },
+    {
+      "code": "lesyel",
+      "name": "Lesser Yellowlegs",
+      "sci": "Tringa flavipes",
+      "date": "2025-07-28",
+      "outing": "YBC 7",
+      "tripId": "398214"
+    },
+    {
+      "code": "leasan",
+      "name": "Least Sandpiper",
+      "sci": "Calidris minutilla",
+      "date": "2025-07-28",
+      "outing": "YBC 7",
+      "tripId": "398214"
+    },
+    {
+      "code": "aldfly",
+      "name": "Alder Flycatcher",
+      "sci": "Empidonax alnorum",
+      "date": "2025-07-28",
+      "outing": "YBC 7",
+      "tripId": "398214"
+    },
+    {
+      "code": "cangoo",
+      "name": "Canada Goose",
+      "sci": "Branta canadensis",
+      "date": "2025-08-04",
+      "outing": "YBC 8",
+      "tripId": "400186"
+    },
+    {
+      "code": "bkbcuc",
+      "name": "Black-billed Cuckoo",
+      "sci": "Coccyzus erythropthalmus",
+      "date": "2025-08-04",
+      "outing": "YBC 8",
+      "tripId": "400186"
+    },
+    {
+      "code": "norfli",
+      "name": "Northern Flicker",
+      "sci": "Colaptes auratus",
+      "date": "2025-08-04",
+      "outing": "YBC 8",
+      "tripId": "400186"
+    },
+    {
+      "code": "pinwar",
+      "name": "Pine Warbler",
+      "sci": "Setophaga pinus",
+      "date": "2025-08-04",
+      "outing": "YBC 8",
+      "tripId": "400186"
+    },
+    {
+      "code": "bkbplo",
+      "name": "Black-bellied Plover",
+      "sci": "Pluvialis squatarola",
+      "date": "2025-08-18",
+      "outing": "YBC 9",
+      "tripId": "404107"
+    },
+    {
+      "code": "rudtur",
+      "name": "Ruddy Turnstone",
+      "sci": "Arenaria interpres",
+      "date": "2025-08-18",
+      "outing": "YBC 9",
+      "tripId": "404107"
+    },
+    {
+      "code": "haiwoo",
+      "name": "Hairy Woodpecker",
+      "sci": "Leuconotopicus villosus",
+      "date": "2025-08-18",
+      "outing": "YBC 9",
+      "tripId": "404107"
+    },
+    {
+      "code": "merlin",
+      "name": "Merlin",
+      "sci": "Falco columbarius",
+      "date": "2025-08-18",
+      "outing": "YBC 9",
+      "tripId": "404107"
+    },
+    {
+      "code": "solsan",
+      "name": "Solitary Sandpiper",
+      "sci": "Tringa solitaria",
+      "date": "2025-08-25",
+      "outing": "YBC 10",
+      "tripId": "405758"
+    },
+    {
+      "code": "sposan",
+      "name": "Spotted Sandpiper",
+      "sci": "Actitis macularius",
+      "date": "2025-09-01",
+      "outing": "YBC 11",
+      "tripId": "408297"
+    },
+    {
+      "code": "semsan",
+      "name": "Semipalmated Sandpiper",
+      "sci": "Calidris pusilla",
+      "date": "2025-09-01",
+      "outing": "YBC 11",
+      "tripId": "408297"
+    },
+    {
+      "code": "rengre",
+      "name": "Red-necked Grebe",
+      "sci": "Podiceps grisegena",
+      "date": "2025-09-01",
+      "outing": "YBC 11",
+      "tripId": "408297"
+    },
+    {
+      "code": "rethaw",
+      "name": "Red-tailed Hawk",
+      "sci": "Buteo jamaicensis",
+      "date": "2025-09-01",
+      "outing": "YBC 11",
+      "tripId": "408297"
+    },
+    {
+      "code": "ambduc",
+      "name": "American Black Duck",
+      "sci": "Anas rubripes",
+      "date": "2025-09-14",
+      "outing": "YBC 12",
+      "tripId": "411772"
+    },
+    {
+      "code": "buffle",
+      "name": "Bufflehead",
+      "sci": "Bucephala albeola",
+      "date": "2025-09-14",
+      "outing": "YBC 12",
+      "tripId": "411772"
+    },
+    {
+      "code": "lbbgul",
+      "name": "Lesser Black-backed Gull",
+      "sci": "Larus fuscus",
+      "date": "2025-09-14",
+      "outing": "YBC 12",
+      "tripId": "411772"
+    },
+    {
+      "code": "greegr",
+      "name": "Great Egret",
+      "sci": "Ardea alba",
+      "date": "2025-09-14",
+      "outing": "YBC 12",
+      "tripId": "411772"
+    },
+    {
+      "code": "tuftit",
+      "name": "Tufted Titmouse",
+      "sci": "Baeolophus bicolor",
+      "date": "2025-09-28",
+      "outing": "YBC 13",
+      "tripId": "416141"
+    },
+    {
+      "code": "whbnut",
+      "name": "White-breasted Nuthatch",
+      "sci": "Sitta carolinensis",
+      "date": "2025-09-28",
+      "outing": "YBC 13",
+      "tripId": "416141"
+    },
+    {
+      "code": "brncre",
+      "name": "Brown Creeper",
+      "sci": "Certhia americana",
+      "date": "2025-09-28",
+      "outing": "YBC 13",
+      "tripId": "416141"
+    },
+    {
+      "code": "eursta",
+      "name": "European Starling",
+      "sci": "Sturnus vulgaris",
+      "date": "2025-09-28",
+      "outing": "YBC 13",
+      "tripId": "416141"
+    },
+    {
+      "code": "gnwtea",
+      "name": "Green-winged Teal",
+      "sci": "Anas crecca",
+      "date": "2025-10-05",
+      "outing": "YBC 14",
+      "tripId": "418490"
+    },
+    {
+      "code": "rebwoo",
+      "name": "Red-bellied Woodpecker",
+      "sci": "Melanerpes carolinus",
+      "date": "2025-10-05",
+      "outing": "YBC 14",
+      "tripId": "418490"
+    },
+    {
+      "code": "ruckin",
+      "name": "Ruby-crowned Kinglet",
+      "sci": "Corthylio calendula",
+      "date": "2025-10-05",
+      "outing": "YBC 14",
+      "tripId": "418490"
+    },
+    {
+      "code": "norgan",
+      "name": "Northern Gannet",
+      "sci": "Morus bassanus",
+      "date": "2025-10-13",
+      "outing": "YBC 15",
+      "tripId": "422824"
+    },
+    {
+      "code": "grecor",
+      "name": "Great Cormorant",
+      "sci": "Phalacrocorax carbo",
+      "date": "2025-10-13",
+      "outing": "YBC 15",
+      "tripId": "422824"
+    },
+    {
+      "code": "nswowl",
+      "name": "Northern Saw-whet Owl",
+      "sci": "Aegolius acadicus",
+      "date": "2025-10-18",
+      "outing": "YBC 16",
+      "tripId": "424734"
+    },
+    {
+      "code": "norpin",
+      "name": "Northern Pintail",
+      "sci": "Anas acuta",
+      "date": "2025-10-26",
+      "outing": "YBC 17",
+      "tripId": "426796"
+    },
+    {
+      "code": "hoomer",
+      "name": "Hooded Merganser",
+      "sci": "Lophodytes cucullatus",
+      "date": "2025-10-26",
+      "outing": "YBC 17",
+      "tripId": "426796"
+    },
+    {
+      "code": "greyel",
+      "name": "Greater Yellowlegs",
+      "sci": "Tringa melanoleuca",
+      "date": "2025-10-26",
+      "outing": "YBC 17",
+      "tripId": "426796"
+    },
+    {
+      "code": "shshaw",
+      "name": "Sharp-shinned Hawk",
+      "sci": "Accipiter striatus",
+      "date": "2025-10-26",
+      "outing": "YBC 17",
+      "tripId": "426796"
+    },
+    {
+      "code": "coohaw",
+      "name": "Cooper's Hawk",
+      "sci": "Astur cooperii",
+      "date": "2025-10-26",
+      "outing": "YBC 17",
+      "tripId": "426796"
+    },
+    {
+      "code": "lotduc",
+      "name": "Long-tailed Duck",
+      "sci": "Clangula hyemalis",
+      "date": "2025-11-02",
+      "outing": "YBC 18",
+      "tripId": "429033"
+    },
+    {
+      "code": "rebmer",
+      "name": "Red-breasted Merganser",
+      "sci": "Mergus serrator",
+      "date": "2025-11-02",
+      "outing": "YBC 18",
+      "tripId": "429033"
+    },
+    {
+      "code": "horgre",
+      "name": "Horned Grebe",
+      "sci": "Podiceps auritus",
+      "date": "2025-11-02",
+      "outing": "YBC 18",
+      "tripId": "429033"
+    },
+    {
+      "code": "evegro",
+      "name": "Evening Grosbeak",
+      "sci": "Hesperiphona vespertina",
+      "date": "2025-11-09",
+      "outing": "YBC 19",
+      "tripId": "430912"
+    },
+    {
+      "code": "balori",
+      "name": "Baltimore Oriole",
+      "sci": "Icterus galbula",
+      "date": "2025-11-09",
+      "outing": "YBC 19",
+      "tripId": "430912"
+    },
+    {
+      "code": "harduc",
+      "name": "Harlequin Duck",
+      "sci": "Histrionicus histrionicus",
+      "date": "2025-11-15",
+      "outing": "YBC 20",
+      "tripId": "433002"
+    },
+    {
+      "code": "perfal",
+      "name": "Peregrine Falcon",
+      "sci": "Falco peregrinus",
+      "date": "2025-11-15",
+      "outing": "YBC 20",
+      "tripId": "433002"
+    },
+    {
+      "code": "comgol",
+      "name": "Common Goldeneye",
+      "sci": "Bucephala clangula",
+      "date": "2025-11-23",
+      "outing": "YBC 21",
+      "tripId": "435515"
+    },
+    {
+      "code": "pilwoo",
+      "name": "Pileated Woodpecker",
+      "sci": "Dryocopus pileatus",
+      "date": "2025-11-23",
+      "outing": "YBC 21",
+      "tripId": "435515"
+    },
+    {
+      "code": "houfin",
+      "name": "House Finch",
+      "sci": "Haemorhous mexicanus",
+      "date": "2025-12-07",
+      "outing": "YBC 22",
+      "tripId": "439695"
+    },
+    {
+      "code": "amtspa",
+      "name": "American Tree Sparrow",
+      "sci": "Spizelloides arborea",
+      "date": "2025-12-07",
+      "outing": "YBC 22",
+      "tripId": "439695"
+    },
+    {
+      "code": "yebcha",
+      "name": "Yellow-breasted Chat",
+      "sci": "Icteria virens",
+      "date": "2025-12-07",
+      "outing": "YBC 22",
+      "tripId": "439695"
+    },
+    {
+      "code": "bulori",
+      "name": "Bullock's Oriole",
+      "sci": "Icterus bullockii",
+      "date": "2025-12-14",
+      "outing": "YBC 23: Christ Bird Count",
+      "tripId": "442735"
+    },
+    {
+      "code": "snoowl1",
+      "name": "Snowy Owl",
+      "sci": "Bubo scandiacus",
+      "date": "2025-12-21",
+      "outing": "YBC 24: Operation Snow",
+      "tripId": "454616"
+    },
+    {
+      "code": "norshr4",
+      "name": "Northern Shrike",
+      "sci": "Lanius borealis",
+      "date": "2025-12-21",
+      "outing": "YBC 24: Operation Snow",
+      "tripId": "454616"
+    },
+    {
+      "code": "snobun",
+      "name": "Snow Bunting",
+      "sci": "Plectrophenax nivalis",
+      "date": "2025-12-21",
+      "outing": "YBC 24: Operation Snow",
+      "tripId": "454616"
+    },
+    {
+      "code": "normoc",
+      "name": "Northern Mockingbird",
+      "sci": "Mimus polyglottos",
+      "date": "2025-12-28",
+      "outing": "YBC 25: Crow Patrol",
+      "tripId": "454615"
+    },
+    {
+      "code": "amewig",
+      "name": "American Wigeon",
+      "sci": "Mareca americana",
+      "date": "2026-01-04",
+      "outing": "YBC 26",
+      "tripId": "459192"
+    },
+    {
+      "code": "bohwax",
+      "name": "Bohemian Waxwing",
+      "sci": "Bombycilla garrulus",
+      "date": "2026-01-04",
+      "outing": "YBC 26",
+      "tripId": "459192"
+    },
+    {
+      "code": "yetwar",
+      "name": "Yellow-throated Warbler",
+      "sci": "Setophaga dominica",
+      "date": "2026-01-11",
+      "outing": "YBC 27",
+      "tripId": "466023"
+    },
+    {
+      "code": "gresca",
+      "name": "Greater Scaup",
+      "sci": "Aythya marila",
+      "date": "2026-02-01",
+      "outing": "YBC 29",
+      "tripId": "474256"
+    },
+    {
+      "code": "redpol1",
+      "name": "Redpoll",
+      "sci": "Acanthis flammea",
+      "date": "2026-02-15",
+      "outing": "YBC 31",
+      "tripId": "477083"
+    },
+    {
+      "code": "pinsis",
+      "name": "Pine Siskin",
+      "sci": "Spinus pinus",
+      "date": "2026-02-15",
+      "outing": "YBC 31",
+      "tripId": "477083"
+    },
+    {
+      "code": "bargol",
+      "name": "Barrow's Goldeneye",
+      "sci": "Bucephala islandica",
+      "date": "2026-02-22",
+      "outing": "YBC 32",
+      "tripId": "480635"
+    },
+    {
+      "code": "norsho",
+      "name": "Northern Shoveler",
+      "sci": "Spatula clypeata",
+      "date": "2026-03-01",
+      "outing": "YBC 33",
+      "tripId": "486216"
+    },
+    {
+      "code": "comgra",
+      "name": "Common Grackle",
+      "sci": "Quiscalus quiscula",
+      "date": "2026-03-15",
+      "outing": "YBC 35",
+      "tripId": "496423"
+    },
+    {
+      "code": "rufgro",
+      "name": "Ruffed Grouse",
+      "sci": "Bonasa umbellus",
+      "date": "2026-03-22",
+      "outing": "YBC 36",
+      "tripId": "496424"
+    },
+    {
+      "code": "killde",
+      "name": "Killdeer",
+      "sci": "Charadrius vociferus",
+      "date": "2026-03-22",
+      "outing": "YBC 36",
+      "tripId": "496424"
+    },
+    {
+      "code": "pursan",
+      "name": "Purple Sandpiper",
+      "sci": "Calidris maritima",
+      "date": "2026-03-22",
+      "outing": "YBC 36",
+      "tripId": "496424"
+    },
+    {
+      "code": "norgos",
+      "name": "American Goshawk",
+      "sci": "Astur atricapillus",
+      "date": "2026-03-28",
+      "outing": "YBC 37",
+      "tripId": "496425"
+    },
+    {
+      "code": "bnhcow",
+      "name": "Brown-headed Cowbird",
+      "sci": "Molothrus ater",
+      "date": "2026-03-28",
+      "outing": "YBC 37",
+      "tripId": "496425"
+    },
+    {
+      "code": "gadwal",
+      "name": "Gadwall",
+      "sci": "Mareca strepera",
+      "date": "2026-04-05",
+      "outing": "YBC 38",
+      "tripId": "496426"
+    },
+    {
+      "code": "eurwig",
+      "name": "Eurasian Wigeon",
+      "sci": "Mareca penelope",
+      "date": "2026-04-05",
+      "outing": "YBC 38",
+      "tripId": "496426"
+    },
+    {
+      "code": "rinduc",
+      "name": "Ring-necked Duck",
+      "sci": "Aythya collaris",
+      "date": "2026-04-05",
+      "outing": "YBC 38",
+      "tripId": "496426"
+    },
+    {
+      "code": "lessca",
+      "name": "Lesser Scaup",
+      "sci": "Aythya affinis",
+      "date": "2026-04-05",
+      "outing": "YBC 38",
+      "tripId": "496426"
+    },
+    {
+      "code": "norhar2",
+      "name": "Northern Harrier",
+      "sci": "Circus hudsonius",
+      "date": "2026-04-05",
+      "outing": "YBC 38",
+      "tripId": "496426"
+    },
+    {
+      "code": "reshaw",
+      "name": "Red-shouldered Hawk",
+      "sci": "Buteo lineatus",
+      "date": "2026-04-05",
+      "outing": "YBC 38",
+      "tripId": "496426"
+    },
+    {
+      "code": "palwar",
+      "name": "Palm Warbler",
+      "sci": "Setophaga palmarum",
+      "date": "2026-04-12",
+      "outing": "YBC 39: To Kill A Greep",
+      "tripId": "500001"
+    },
+    {
+      "code": "chiswi",
+      "name": "Chimney Swift",
+      "sci": "Chaetura pelagica",
+      "date": "2026-05-10",
+      "outing": "YBC 42: Fishing & Pishing",
+      "tripId": "518632"
+    },
+    {
+      "code": "sora",
+      "name": "Sora",
+      "sci": "Porzana carolina",
+      "date": "2026-05-10",
+      "outing": "YBC 42: Fishing & Pishing",
+      "tripId": "518632"
+    },
+    {
+      "code": "ameoys",
+      "name": "American Oystercatcher",
+      "sci": "Haematopus palliatus",
+      "date": "2026-05-10",
+      "outing": "YBC 42: Fishing & Pishing",
+      "tripId": "518632"
+    },
+    {
+      "code": "amebit",
+      "name": "American Bittern",
+      "sci": "Botaurus lentiginosus",
+      "date": "2026-05-10",
+      "outing": "YBC 42: Fishing & Pishing",
+      "tripId": "518632"
+    },
+    {
+      "code": "purmar",
+      "name": "Purple Martin",
+      "sci": "Progne subis",
+      "date": "2026-05-17",
+      "outing": "YBC 43: Birdathon Eve",
+      "tripId": "524612"
+    },
+    {
+      "code": "linspa",
+      "name": "Lincoln's Sparrow",
+      "sci": "Melospiza lincolnii",
+      "date": "2026-05-17",
+      "outing": "YBC 43: Birdathon Eve",
+      "tripId": "524612"
+    },
+    {
+      "code": "wlswar",
+      "name": "Wilson's Warbler",
+      "sci": "Cardellina pusilla",
+      "date": "2026-05-17",
+      "outing": "YBC 43: Birdathon Eve",
+      "tripId": "524612"
+    },
+    {
+      "code": "robgro",
+      "name": "Rose-breasted Grosbeak",
+      "sci": "Pheucticus ludovicianus",
+      "date": "2026-05-17",
+      "outing": "YBC 43: Birdathon Eve",
+      "tripId": "524612"
+    },
+    {
+      "code": "whwsco2",
+      "name": "White-winged Scoter",
+      "sci": "Melanitta deglandi",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "comnig",
+      "name": "Common Nighthawk",
+      "sci": "Chordeiles minor",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "easwpw1",
+      "name": "Eastern Whip-poor-will",
+      "sci": "Antrostomus vociferus",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "virrai",
+      "name": "Virginia Rail",
+      "sci": "Rallus limicola",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "amewoo",
+      "name": "American Woodcock",
+      "sci": "Scolopax minor",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "brdowl",
+      "name": "Barred Owl",
+      "sci": "Strix varia",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "amekes",
+      "name": "American Kestrel",
+      "sci": "Falco sparverius",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "leafly",
+      "name": "Least Flycatcher",
+      "sci": "Empidonax minimus",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "grcfly",
+      "name": "Great Crested Flycatcher",
+      "sci": "Myiarchus crinitus",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "easkin",
+      "name": "Eastern Kingbird",
+      "sci": "Tyrannus tyrannus",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "brnthr",
+      "name": "Brown Thrasher",
+      "sci": "Toxostoma rufum",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "veery",
+      "name": "Veery",
+      "sci": "Catharus fuscescens",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "woothr",
+      "name": "Wood Thrush",
+      "sci": "Hylocichla mustelina",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "laplon",
+      "name": "Lapland Longspur",
+      "sci": "Calcarius lapponicus",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "norwat",
+      "name": "Northern Waterthrush",
+      "sci": "Parkesia noveboracensis",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "tenwar",
+      "name": "Tennessee Warbler",
+      "sci": "Leiothlypis peregrina",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "bkpwar",
+      "name": "Blackpoll Warbler",
+      "sci": "Setophaga striata",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "prawar",
+      "name": "Prairie Warbler",
+      "sci": "Setophaga discolor",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "canwar",
+      "name": "Canada Warbler",
+      "sci": "Cardellina canadensis",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "scatan",
+      "name": "Scarlet Tanager",
+      "sci": "Piranga olivacea",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "indbun",
+      "name": "Indigo Bunting",
+      "sci": "Passerina cyanea",
+      "date": "2026-05-23",
+      "outing": "YBC 44: Birdathon 2026",
+      "tripId": "528253"
+    },
+    {
+      "code": "y00478",
+      "name": "Iceland Gull",
+      "sci": "Larus glaucoides",
+      "date": "2026-06-07",
+      "outing": "YBC 46: Searching for Nests",
+      "tripId": "542960"
+    },
+    {
+      "code": "swathr",
+      "name": "Swainson's Thrush",
+      "sci": "Catharus ustulatus",
+      "date": "2026-06-07",
+      "outing": "YBC 46: Searching for Nests",
+      "tripId": "542960"
+    },
+    {
+      "code": "uplsan",
+      "name": "Upland Sandpiper",
+      "sci": "Bartramia longicauda",
+      "date": "2026-06-15",
+      "outing": "YBC 47: Shore(Blueberry Barren)birds",
+      "tripId": "542961"
+    },
+    {
+      "code": "cliswa",
+      "name": "Cliff Swallow",
+      "sci": "Petrochelidon pyrrhonota",
+      "date": "2026-06-15",
+      "outing": "YBC 47: Shore(Blueberry Barren)birds",
+      "tripId": "542961"
+    },
+    {
+      "code": "vesspa",
+      "name": "Vesper Sparrow",
+      "sci": "Pooecetes gramineus",
+      "date": "2026-06-15",
+      "outing": "YBC 47: Shore(Blueberry Barren)birds",
+      "tripId": "542961"
+    },
+    {
+      "code": "sprgro",
+      "name": "Spruce Grouse",
+      "sci": "Canachites canadensis",
+      "date": "2026-07-11",
+      "outing": "YBC 49: Fried Pickles",
+      "tripId": "549923"
+    },
+    {
+      "code": "camwar",
+      "name": "Cape May Warbler",
+      "sci": "Setophaga tigrina",
+      "date": "2026-08-22",
+      "outing": "YBC 54: CEDWs feat. Fall Warblers",
+      "tripId": "563668"
+    },
+    {
+      "code": "babwar",
+      "name": "Bay-breasted Warbler",
+      "sci": "Setophaga castanea",
+      "date": "2026-08-22",
+      "outing": "YBC 54: CEDWs feat. Fall Warblers",
+      "tripId": "563668"
+    }
   ]
 }

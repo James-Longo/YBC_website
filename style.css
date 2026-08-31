@@ -690,6 +690,131 @@ body.menu-open {
   }
 }
 
+/* ---------------- Club Life List page ---------------- */
+
+.life-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.life-sort {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6f6e67;
+}
+
+.life-sort select {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--ebird-border);
+  border-radius: 6px;
+  background: white;
+  color: var(--ebird-text);
+}
+
+.life-header,
+.life-row {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 2.2fr) 8.5rem minmax(0, 1.8fr);
+  align-items: baseline;
+  column-gap: 0.75rem;
+}
+
+.life-header {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6f6e67;
+  padding: 0.5rem 1rem 0.4rem;
+}
+
+.life-list {
+  list-style: none;
+  background: #f4f3f1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 1px 0 0;
+  margin: 0 -1rem 4rem;
+}
+
+.life-list > li {
+  background: white;
+}
+
+.life-row {
+  padding: 0.6rem 1rem;
+  color: #6f6e67;
+}
+
+.life-num {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #9b9a94;
+  text-align: right;
+}
+
+.life-species a {
+  text-decoration: none;
+}
+
+.life-species a:hover .life-name {
+  text-decoration: underline;
+}
+
+.life-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ebird-blue);
+}
+
+.life-date {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.life-outing {
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.life-outing a {
+  color: inherit;
+}
+
+.life-outing a:hover {
+  color: var(--ebird-blue);
+}
+
+@media (max-width: 640px) {
+  .life-header {
+    display: none;
+  }
+
+  .life-row {
+    grid-template-columns: 2.2rem minmax(0, 1fr);
+    row-gap: 0.1rem;
+  }
+
+  .life-num {
+    grid-row: 1 / 3;
+    align-self: start;
+  }
+
+  .life-date,
+  .life-outing {
+    grid-column: 2;
+    font-size: 0.85rem;
+  }
+}
+
 /* ---------------- Upcoming Outings / RSVP ---------------- */
 
 .outings-grid {

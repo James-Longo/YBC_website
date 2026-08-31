@@ -75,6 +75,9 @@ def main():
     # First page load establishes the eBird session cookie; API calls need it.
     get('https://ebird.org/tripreport')
 
+    # Process outings oldest-first so each species records the outing it was first seen on.
+    rows.sort(key=lambda r: datetime.strptime(r['date'], '%m/%d/%Y'))
+
     species = {}        # speciesCode -> {commonName, checklists, photos, audio}
     people = set()
     locations = set()
@@ -104,7 +107,11 @@ def main():
                 continue
             report_species += 1
             entry = species.setdefault(t['speciesCode'], {
-                'commonName': t['commonName'], 'checklists': 0, 'photos': 0, 'audio': 0, 'outings': 0,
+                'commonName': t['commonName'], 'sciName': t.get('sciName', ''),
+                'checklists': 0, 'photos': 0, 'audio': 0, 'outings': 0,
+                # First-seen info for the club life list.
+                'firstDate': datetime.strptime(row['date'], '%m/%d/%Y').strftime('%Y-%m-%d'),
+                'firstOuting': row['title'], 'firstTripId': trip_id,
             })
             entry['checklists'] += t.get('numChecklists', 0)
             entry['photos'] += t.get('numPhotos', 0)
@@ -148,6 +155,12 @@ def main():
         'reports': {r['tripId']: {'species': r['species'], 'checklists': r['checklists']} for r in per_report},
         # Same data as a list (with titles/dates) — used as demo data before the sheet backend is live.
         'reportList': per_report,
+        # Club life list: every species with when (and on which outing) it was first seen.
+        'lifeList': [
+            {'code': code, 'name': s['commonName'], 'sci': s['sciName'],
+             'date': s['firstDate'], 'outing': s['firstOuting'], 'tripId': s['firstTripId']}
+            for code, s in species.items()
+        ],
     }
 
     with open(OUT, 'w') as f:
