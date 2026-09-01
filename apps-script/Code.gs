@@ -13,6 +13,8 @@
  *   pasted in by hand (no Timestamp) work fine too — see outingIdFor below.
  * - RSVP names are written into the "attending" cell, comma-separated.
  * - An outing moves from Upcoming to Past automatically the day after its date.
+ * - Each form submission also adds a "YBC" event to the owner's Google Calendar
+ *   (see onFormSubmit / setupCalendarTrigger below).
  *
  * Deploy: Extensions > Apps Script > paste this file > Deploy > New deployment
  *   type "Web app", execute as Me, access "Anyone". Copy the /exec URL into
@@ -80,6 +82,107 @@ function doPost(e) {
   } finally {
     lock.releaseLock();
   }
+}
+
+// ---------------------------------------------------------------------------
+// Google Calendar: mirror every new form submission as a "YBC" event
+// ---------------------------------------------------------------------------
+
+var CALENDAR_EVENT_TITLE = 'YBC';
+var DEFAULT_EVENT_HOURS = 2; // used when the form's end time is left blank
+
+/**
+ * Installable "On form submit" trigger (spreadsheet-scoped). Runs as the sheet
+ * owner, so the event lands on their primary calendar. Reads the row back from
+ * the sheet rather than trusting e.namedValues, so dates/times arrive as real
+ * values in the spreadsheet's timezone.
+ *
+ * One-time setup: run setupCalendarTrigger() from the editor (or add the trigger
+ * by hand: Triggers > Add Trigger > onFormSubmit / From spreadsheet / On form submit).
+ * Triggers always run the latest saved code — no web-app redeploy needed.
+ */
+function onFormSubmit(e) {
+  var table = readTable();
+  var rowNumber = e && e.range ? e.range.getRow() : table.sheet.getLastRow();
+  var row = table.sheet.getRange(rowNumber, 1, 1, table.sheet.getLastColumn()).getValues()[0];
+  var outing = rowToOuting(row, table.col, table.tz);
+  if (!outing) return;
+
+  var when = eventWindow(
+    outing.date,
+    timeToMinutes(row[table.col('start time')], table.tz),
+    timeToMinutes(row[table.col('end time')], table.tz),
+    table.tz
+  );
+
+  var calendar = CalendarApp.getDefaultCalendar();
+  var options = { location: outing.location, description: eventDescription(outing) };
+  if (when.allDay) {
+    calendar.createAllDayEvent(CALENDAR_EVENT_TITLE, when.start, options);
+  } else {
+    calendar.createEvent(CALENDAR_EVENT_TITLE, when.start, when.end, options);
+  }
+}
+
+/** Run once from the Apps Script editor to install the form-submit trigger. */
+function setupCalendarTrigger() {
+  var already = ScriptApp.getProjectTriggers().some(function (t) {
+    return t.getHandlerFunction() === 'onFormSubmit';
+  });
+  if (already) {
+    Logger.log('onFormSubmit trigger already installed');
+    return;
+  }
+  ScriptApp.newTrigger('onFormSubmit')
+    .forSpreadsheet(SPREADSHEET_ID)
+    .onFormSubmit()
+    .create();
+  Logger.log('Installed onFormSubmit trigger');
+}
+
+function eventDescription(outing) {
+  return [outing.title, outing.description].filter(Boolean).join('\n\n');
+}
+
+/**
+ * Turn the sheet's date + start/end minutes into concrete Date objects.
+ *   - same start and end  -> 24-hour event (the Birdathon)
+ *   - end earlier than start -> ends the next day (owl banding to midnight or later)
+ *   - no end time -> DEFAULT_EVENT_HOURS long
+ *   - no start time -> all-day event
+ * `tz` is the spreadsheet's timezone, so DST is handled per date.
+ */
+function eventWindow(dateStr, startMins, endMins, tz) {
+  if (startMins === null) {
+    return { allDay: true, start: dateAtMinutes(dateStr, 0, tz), end: null };
+  }
+  var start = dateAtMinutes(dateStr, startMins, tz);
+  var end;
+  if (endMins === null) {
+    end = new Date(start.getTime() + DEFAULT_EVENT_HOURS * 60 * 60 * 1000);
+  } else if (endMins <= startMins) {
+    end = new Date(dateAtMinutes(dateStr, endMins, tz).getTime() + 24 * 60 * 60 * 1000);
+  } else {
+    end = dateAtMinutes(dateStr, endMins, tz);
+  }
+  return { allDay: false, start: start, end: end };
+}
+
+/** Build a Date for `yyyy-MM-dd` at `minutes` past midnight in the given timezone. */
+function dateAtMinutes(dateStr, minutes, tz) {
+  var parts = dateStr.split('-').map(Number);
+  // Ask the timezone for its offset on that day (handles DST correctly).
+  var noonUtc = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2], 12));
+  var offset = Utilities.formatDate(noonUtc, tz, 'Z'); // e.g. "-0400"
+  var iso = dateStr + 'T' + pad2(Math.floor(minutes / 60)) + ':' + pad2(minutes % 60) + ':00'
+    + offset.slice(0, 3) + ':' + offset.slice(3);
+  return new Date(iso);
+}
+
+/** Minutes past midnight for a time cell (Date, day-fraction, or text), or null if blank. */
+function timeToMinutes(value, tz) {
+  var text = formatTime(value, tz);
+  return text ? parseMinutes(text) : null;
 }
 
 /** Locate the form-responses tab by its headers and return rows + column lookup. */

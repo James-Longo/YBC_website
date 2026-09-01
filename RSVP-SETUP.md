@@ -25,7 +25,9 @@ Script, so the site reads the "YBC outing planner (Responses)" sheet on every pa
 ## The workflow once live
 
 - **Create an outing**: submit your Google Form (date, start/end time, title, location,
-  description). It appears under Upcoming Outings automatically.
+  description). It appears under Upcoming Outings automatically, and a **"YBC" event is
+  added to your Google Calendar** for that date and time (location and the outing's
+  title/description go in the event details).
 - **RSVPs**: signups land in that row's `attending` cell, comma-separated — open the sheet
   to see at a glance who's coming to what. Canceling on the site removes the name.
 - **After the outing**: it moves to the Past Outings timeline on its own. Add the
@@ -49,6 +51,20 @@ Script, so the site reads the "YBC outing planner (Responses)" sheet on every pa
 If you later edit the script, use Deploy → **Manage deployments** → pencil icon →
 new version. (A brand-new deployment would change the URL.)
 
+### Calendar sync (one-time, ~1 minute)
+
+The form-submit → calendar mirror is a *trigger*, not part of the web app, so it needs to be
+installed once (and does **not** need a redeploy — triggers always run the latest saved code):
+
+1. In the Apps Script editor, paste the latest `Code.gs` and save.
+2. Pick `setupCalendarTrigger` in the function dropdown and click **Run**. Authorize when
+   prompted — this is the step that grants Calendar access.
+3. Check the clock icon (**Triggers**) in the left sidebar: you should see `onFormSubmit`
+   listed as *From spreadsheet – On form submit*.
+
+Events go on the primary calendar of whoever ran the setup (i.e. you), titled `YBC`.
+Editing or deleting a row later does **not** touch the calendar — adjust the event by hand.
+
 ## How outings are identified
 
 RSVPs attach to an outing by ID, which comes from one of two places:
@@ -71,6 +87,10 @@ The backend handles the outings that don't fit neatly in one day:
 | `6:30 PM` → `12:00 AM` | `6:30 PM – 12:00 AM` — owl banding ending at midnight |
 | `6:30 PM` → `1:30 AM` | `6:30 PM – 1:30 AM (next day)` |
 | end time left blank | just the start time |
+
+The calendar event follows the same rules: same start and end → a 24-hour event; an end
+earlier than the start → ends the next day; a blank end → a 2-hour event; a blank start →
+an all-day event.
 
 Times are read in the **spreadsheet's** timezone, and a plain-text date like `6/23/2025`
 is normalized the same as a real date value — so neither a stray cell format nor a
