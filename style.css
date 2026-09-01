@@ -435,11 +435,6 @@ body.menu-open {
   opacity: 0.85;
 }
 
-.media-caption-right {
-  margin-left: auto;
-  font-style: italic;
-}
-
 .media-caption:hover strong {
   text-decoration: underline;
 }
