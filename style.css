@@ -212,6 +212,45 @@ body {
   padding: 0.75rem;
 }
 
+.side-menu .install-app {
+  margin-top: 0.75rem;
+  background: none;
+  border: 1px solid var(--ebird-border);
+  border-radius: 6px;
+  padding: 0.7rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ebird-blue);
+  cursor: pointer;
+}
+
+.side-menu .install-app[hidden] {
+  display: none;
+}
+
+.side-menu .install-help {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: var(--ebird-gray);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.side-menu .install-help p {
+  margin: 0 0 0.4rem;
+}
+
+.side-menu .install-help ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.side-menu .install-help[hidden] {
+  display: none;
+}
+
 .menu-close {
   position: absolute;
   top: 0.6rem;

@@ -1,0 +1,15 @@
+{
+  "name": "Hancock County Young Birders Club",
+  "short_name": "YBC",
+  "description": "Hancock County Young Birders Club — outings, RSVPs, trip reports, and the club life list.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F8E500",
+  "theme_color": "#385B75",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
