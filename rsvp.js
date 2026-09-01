@@ -44,7 +44,7 @@ function outingCard(outing, myName) {
          <button type="button" class="rsvp-cancel" data-outing="${esc(outing.id)}" data-name="${esc(myName)}">Can't make it anymore?</button>
        </div>`
     : `<form class="rsvp-form" data-outing="${esc(outing.id)}">
-         <input type="text" name="name" placeholder="First name + last initial" maxlength="40" required />
+         <input type="text" name="name" placeholder="Name" maxlength="40" required />
          <button type="submit">I'm going!</button>
        </form>`;
 

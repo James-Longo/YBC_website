@@ -98,9 +98,8 @@ timezone mismatch can shift an outing to the wrong day.
 
 ## Notes
 
-- **Privacy**: attendee names are publicly visible on the site. The form asks for
-  "First name + last initial" to keep it friendly for a youth club — worth confirming
-  that's what you want before going live.
+- **Privacy**: attendee names are publicly visible on the site. The form just asks for a
+  "Name" — members can enter as much or as little as they're comfortable with.
 - **Abuse**: anyone can submit a name (no accounts). For a small club that's usually fine;
   edit the `attending` cell directly to remove anything junky.
 - Commas are stripped from submitted names (they'd break the comma-separated list), names
