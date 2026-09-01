@@ -12,7 +12,8 @@ An outing moves from one section to the other automatically the day after its da
 
 | File | What it does |
 |---|---|
-| `outings.js` | Shared data layer — holds `RSVP_API_URL`, fetches once for both sections |
+| `outings.js` | Shared data layer — holds `RSVP_API_URL`; renders `public/outings.json` instantly, then refreshes attendance live from Apps Script |
+| `fetch_outings.py` + `public/outings.json` | Snapshot of the sheet, rebuilt by the deploy workflow (Apps Script is slow and fails ~1 in 4 requests, so pages never wait on it) |
 | `rsvp.js` | Renders Upcoming Outings + RSVP handling |
 | `reports.js` + `trip-reports/index.html` | The Trip Reports page (`/trip-reports/`), every past outing in eBird's list style |
 | `apps-script/Code.gs` | The Google Apps Script backend (paste into the sheet) |

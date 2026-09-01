@@ -1,0 +1,569 @@
+{
+  "fetchedAt": "2026-09-01T21:42:16Z",
+  "outings": [
+    {
+      "id": "t1788260129753",
+      "date": "2026-09-07",
+      "time": "11:30 AM – 6:30 PM",
+      "title": "YBC 56: Great Cranberry Island",
+      "location": "Great Cranberry Island",
+      "description": "We'll travel by boat with Birdmaster Donna to see shorebirds on Great Cranberry Island.",
+      "tripReportUrl": "",
+      "attendees": [
+        "Bird Master Donna",
+        "Bird Master James",
+        "Adams Stratton"
+      ]
+    },
+    {
+      "id": "d2026-08-25|YBC 55: Hard Mode",
+      "date": "2026-08-25",
+      "time": "4:00 PM – 7:00 PM",
+      "title": "YBC 55: Hard Mode",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/566010",
+      "attendees": []
+    },
+    {
+      "id": "d2026-08-22|YBC 54: CEDWs feat. Fall Warblers",
+      "date": "2026-08-22",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 54: CEDWs feat. Fall Warblers",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/563668",
+      "attendees": []
+    },
+    {
+      "id": "d2026-08-18|YBC 53: Tuesdays with Birdmaster Zach",
+      "date": "2026-08-18",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 53: Tuesdays with Birdmaster Zach",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/561886",
+      "attendees": []
+    },
+    {
+      "id": "d2026-08-09|YBC 52: Shorebirding",
+      "date": "2026-08-09",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 52: Shorebirding",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/561885",
+      "attendees": []
+    },
+    {
+      "id": "d2026-07-26|YBC 51: So Many Yellowlegs",
+      "date": "2026-07-26",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 51: So Many Yellowlegs",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/561884",
+      "attendees": []
+    },
+    {
+      "id": "d2026-07-19|YBC 50: UPPIES",
+      "date": "2026-07-19",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 50: UPPIES",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/561882",
+      "attendees": []
+    },
+    {
+      "id": "d2026-07-11|YBC 49: Fried Pickles",
+      "date": "2026-07-11",
+      "time": "3:00 PM – 8:00 PM",
+      "title": "YBC 49: Fried Pickles",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/549923",
+      "attendees": []
+    },
+    {
+      "id": "d2026-06-24|YBC 48: Oops! All Addams (Anniversary)",
+      "date": "2026-06-24",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 48: Oops! All Addams (Anniversary)",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/542963",
+      "attendees": []
+    },
+    {
+      "id": "d2026-06-15|YBC 47: Shore(Blueberry Barren)birds",
+      "date": "2026-06-15",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 47: Shore(Blueberry Barren)birds",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/542961",
+      "attendees": []
+    },
+    {
+      "id": "d2026-06-07|YBC 46: Searching for Nests",
+      "date": "2026-06-07",
+      "time": "9:00 AM – 2:00 PM",
+      "title": "YBC 46: Searching for Nests",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/542960",
+      "attendees": []
+    },
+    {
+      "id": "d2026-05-31|YBC 45: Sears Island",
+      "date": "2026-05-31",
+      "time": "6:00 AM – 12:00 PM",
+      "title": "YBC 45: Sears Island",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/542959",
+      "attendees": []
+    },
+    {
+      "id": "d2026-05-23|YBC 44: Birdathon 2026",
+      "date": "2026-05-23",
+      "time": "4:35 AM – 4:35 AM (24 hours)",
+      "title": "YBC 44: Birdathon 2026",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/528253",
+      "attendees": []
+    },
+    {
+      "id": "d2026-05-17|YBC 43: Birdathon Eve",
+      "date": "2026-05-17",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 43: Birdathon Eve",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/524612",
+      "attendees": []
+    },
+    {
+      "id": "d2026-05-10|YBC 42: Fishing & Pishing",
+      "date": "2026-05-10",
+      "time": "3:00 PM – 8:00 PM",
+      "title": "YBC 42: Fishing & Pishing",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/518632",
+      "attendees": []
+    },
+    {
+      "id": "d2026-05-03|YBC 41: The Early Bird Gets The Rain",
+      "date": "2026-05-03",
+      "time": "6:00 AM – 11:00 AM",
+      "title": "YBC 41: The Early Bird Gets The Rain",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/511412",
+      "attendees": []
+    },
+    {
+      "id": "d2026-04-26|YBC 40: Forgotten Fries",
+      "date": "2026-04-26",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 40: Forgotten Fries",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/506577",
+      "attendees": []
+    },
+    {
+      "id": "d2026-04-12|YBC 39: To Kill A Greep",
+      "date": "2026-04-12",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 39: To Kill A Greep",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/500001",
+      "attendees": []
+    },
+    {
+      "id": "d2026-04-05|YBC 38",
+      "date": "2026-04-05",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 38",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/496426",
+      "attendees": []
+    },
+    {
+      "id": "d2026-03-28|YBC 37",
+      "date": "2026-03-28",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 37",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/496425",
+      "attendees": []
+    },
+    {
+      "id": "d2026-03-22|YBC 36",
+      "date": "2026-03-22",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 36",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/496424",
+      "attendees": []
+    },
+    {
+      "id": "d2026-03-15|YBC 35",
+      "date": "2026-03-15",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 35",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/496423",
+      "attendees": []
+    },
+    {
+      "id": "d2026-03-08|YBC 34",
+      "date": "2026-03-08",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 34",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/486217",
+      "attendees": []
+    },
+    {
+      "id": "d2026-03-01|YBC 33",
+      "date": "2026-03-01",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 33",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/486216",
+      "attendees": []
+    },
+    {
+      "id": "d2026-02-22|YBC 32",
+      "date": "2026-02-22",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 32",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/480635",
+      "attendees": []
+    },
+    {
+      "id": "d2026-02-15|YBC 31",
+      "date": "2026-02-15",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 31",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/477083",
+      "attendees": []
+    },
+    {
+      "id": "d2026-02-08|YBC 30",
+      "date": "2026-02-08",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 30",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/474257",
+      "attendees": []
+    },
+    {
+      "id": "d2026-02-01|YBC 29",
+      "date": "2026-02-01",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 29",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/474256",
+      "attendees": []
+    },
+    {
+      "id": "d2026-01-18|YBC 28",
+      "date": "2026-01-18",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 28",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/466025",
+      "attendees": []
+    },
+    {
+      "id": "d2026-01-11|YBC 27",
+      "date": "2026-01-11",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 27",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/466023",
+      "attendees": []
+    },
+    {
+      "id": "d2026-01-04|YBC 26",
+      "date": "2026-01-04",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 26",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/459192",
+      "attendees": []
+    },
+    {
+      "id": "d2025-12-28|YBC 25: Crow Patrol",
+      "date": "2025-12-28",
+      "time": "12:30 PM – 5:30 PM",
+      "title": "YBC 25: Crow Patrol",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/454615",
+      "attendees": []
+    },
+    {
+      "id": "d2025-12-21|YBC 24: Operation Snow",
+      "date": "2025-12-21",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 24: Operation Snow",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/454616",
+      "attendees": []
+    },
+    {
+      "id": "d2025-12-14|YBC 23: Christ Bird Count",
+      "date": "2025-12-14",
+      "time": "7:30 AM – 3:30 PM",
+      "title": "YBC 23: Christ Bird Count",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/442735",
+      "attendees": []
+    },
+    {
+      "id": "d2025-12-07|YBC 22",
+      "date": "2025-12-07",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 22",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/439695",
+      "attendees": []
+    },
+    {
+      "id": "d2025-11-23|YBC 21",
+      "date": "2025-11-23",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 21",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/435515",
+      "attendees": []
+    },
+    {
+      "id": "d2025-11-15|YBC 20",
+      "date": "2025-11-15",
+      "time": "9:00 AM – 2:00 PM",
+      "title": "YBC 20",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/433002",
+      "attendees": []
+    },
+    {
+      "id": "d2025-11-09|YBC 19",
+      "date": "2025-11-09",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 19",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/430912",
+      "attendees": []
+    },
+    {
+      "id": "d2025-11-02|YBC 18",
+      "date": "2025-11-02",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 18",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/429033",
+      "attendees": []
+    },
+    {
+      "id": "d2025-10-26|YBC 17",
+      "date": "2025-10-26",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 17",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/426796",
+      "attendees": []
+    },
+    {
+      "id": "d2025-10-18|YBC 16",
+      "date": "2025-10-18",
+      "time": "6:30 PM – 12:00 AM",
+      "title": "YBC 16",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/424734",
+      "attendees": []
+    },
+    {
+      "id": "d2025-10-13|YBC 15",
+      "date": "2025-10-13",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 15",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/422824",
+      "attendees": []
+    },
+    {
+      "id": "d2025-10-05|YBC 14",
+      "date": "2025-10-05",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 14",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/418490",
+      "attendees": []
+    },
+    {
+      "id": "d2025-09-28|YBC 13",
+      "date": "2025-09-28",
+      "time": "8:00 AM – 1:00 PM",
+      "title": "YBC 13",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/416141",
+      "attendees": []
+    },
+    {
+      "id": "d2025-09-14|YBC 12",
+      "date": "2025-09-14",
+      "time": "12:00 PM – 5:00 PM",
+      "title": "YBC 12",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/411772",
+      "attendees": []
+    },
+    {
+      "id": "d2025-09-01|YBC 11",
+      "date": "2025-09-01",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 11",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/408297",
+      "attendees": []
+    },
+    {
+      "id": "d2025-08-25|YBC 10",
+      "date": "2025-08-25",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 10",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/405758",
+      "attendees": []
+    },
+    {
+      "id": "d2025-08-18|YBC 9",
+      "date": "2025-08-18",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 9",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/404107",
+      "attendees": []
+    },
+    {
+      "id": "d2025-08-04|YBC 8",
+      "date": "2025-08-04",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 8",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/400186",
+      "attendees": []
+    },
+    {
+      "id": "d2025-07-28|YBC 7",
+      "date": "2025-07-28",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 7",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/398214",
+      "attendees": []
+    },
+    {
+      "id": "d2025-07-21|YBC 6",
+      "date": "2025-07-21",
+      "time": "8:45 AM – 6:30 PM",
+      "title": "YBC 6",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/396639",
+      "attendees": []
+    },
+    {
+      "id": "d2025-07-14|YBC 5",
+      "date": "2025-07-14",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 5",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/394621",
+      "attendees": []
+    },
+    {
+      "id": "d2025-07-12|YBC 4",
+      "date": "2025-07-12",
+      "time": "9:00 AM – 12:00 PM",
+      "title": "YBC 4",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/394525",
+      "attendees": []
+    },
+    {
+      "id": "d2025-07-07|YBC 3",
+      "date": "2025-07-07",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 3",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/392527",
+      "attendees": []
+    },
+    {
+      "id": "d2025-07-01|YBC 2",
+      "date": "2025-07-01",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 2",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/390888",
+      "attendees": []
+    },
+    {
+      "id": "d2025-06-23|YBC 1",
+      "date": "2025-06-23",
+      "time": "7:00 AM – 12:00 PM",
+      "title": "YBC 1",
+      "location": "",
+      "description": "",
+      "tripReportUrl": "https://ebird.org/tripreport/388162",
+      "attendees": []
+    }
+  ]
+}

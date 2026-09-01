@@ -43,6 +43,11 @@ jobs:
       - name: Refresh eBird stats
         continue-on-error: true
         run: python3 scrape_ebird.py
+      # Snapshots the outings sheet so pages render instantly; the site refreshes
+      # attendance from Apps Script in the background. Falls back to the committed copy.
+      - name: Snapshot outings
+        continue-on-error: true
+        run: python3 fetch_outings.py
       - name: Build
         run: npm run build
       - name: Setup Pages

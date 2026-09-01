@@ -1,6 +1,7 @@
 // Renders the "Upcoming Outings" section and handles RSVPs.
 import {
-  getOutings,
+  loadOutings,
+  applyLocalRsvp,
   sendRsvp,
   readStore,
   writeStore,
@@ -91,7 +92,8 @@ async function onRsvpSubmit(event) {
     const myRsvps = readStore(MY_RSVP_KEY);
     myRsvps[outingId] = name;
     writeStore(MY_RSVP_KEY, myRsvps);
-    await loadUpcoming({ refresh: true });
+    applyLocalRsvp('rsvp', outingId, name);
+    await loadUpcoming();
   } catch (error) {
     console.error('RSVP error:', error);
     button.disabled = false;
@@ -110,7 +112,8 @@ async function onCancelClick(event) {
     const myRsvps = readStore(MY_RSVP_KEY);
     delete myRsvps[outing];
     writeStore(MY_RSVP_KEY, myRsvps);
-    await loadUpcoming({ refresh: true });
+    applyLocalRsvp('cancel', outing, name);
+    await loadUpcoming();
   } catch (error) {
     console.error('Cancel error:', error);
     button.disabled = false;
@@ -119,15 +122,23 @@ async function onCancelClick(event) {
 
 /* ---------------- Init ---------------- */
 
-async function loadUpcoming(options) {
+// Each load renders twice (snapshot, then live). If an RSVP starts another load in
+// between, the older load's late live render must not overwrite the newer list.
+let loadGeneration = 0;
+
+async function loadUpcoming() {
   const list = document.getElementById('outings-list');
   if (!list) return;
+  const generation = ++loadGeneration;
   try {
-    const { upcoming } = await getOutings(options);
-    renderOutings(upcoming);
+    await loadOutings(({ upcoming }) => {
+      if (generation === loadGeneration) renderOutings(upcoming);
+    });
   } catch (error) {
     console.error('Outings loading error:', error);
-    list.innerHTML = '<p class="outings-empty">Check back soon for upcoming outings.</p>';
+    if (generation === loadGeneration) {
+      list.innerHTML = '<p class="outings-empty">Check back soon for upcoming outings.</p>';
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 // Renders the Trip Reports page: every past outing, newest first, in eBird's
 // "My Trip Reports" list style, with per-report numbers from public/stats.json.
-import { getOutings, esc, parseDate } from './outings.js';
+import { loadOutings, esc, parseDate } from './outings.js';
 
 function formatListDate(dateStr) {
   const date = parseDate(dateStr);
@@ -41,16 +41,20 @@ async function loadReports() {
   const count = document.getElementById('reports-count');
   if (!list) return;
 
-  try {
-    const [{ past }, reportStats] = await Promise.all([
-      getOutings(),
-      fetch('/stats.json').then((r) => (r.ok ? r.json() : {})).then((s) => s.reports || {}).catch(() => ({})),
-    ]);
+  const reportStats = await fetch('/stats.json')
+    .then((r) => (r.ok ? r.json() : {}))
+    .then((s) => s.reports || {})
+    .catch(() => ({}));
 
+  const render = ({ past }) => {
     if (count) count.textContent = past.length.toLocaleString('en-US');
     list.innerHTML = past.length
       ? past.map((o) => reportRow(o, reportStats)).join('')
       : '<li class="reports-loading">No trip reports yet — check back after our first outing!</li>';
+  };
+
+  try {
+    await loadOutings(render);
   } catch (error) {
     console.error('Trip reports loading error:', error);
     list.innerHTML = '<li class="reports-loading">Check back soon for trip reports.</li>';
