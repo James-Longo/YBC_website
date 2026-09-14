@@ -17,7 +17,7 @@ import re
 import sys
 import time
 import urllib.request
-from datetime import datetime
+from datetime import date, datetime
 from io import StringIO
 
 SHEET_ID = '13B3nwUtvuE6ULHSFEBleg7KUbScN-BvdoqLQwfBvPLk'
@@ -70,7 +70,13 @@ def main():
     print('Fetching outings sheet...')
     rows = list(csv.DictReader(StringIO(get(CSV_URL))))
     rows = [r for r in rows if r.get('title') and r.get('date')]
-    print(f'  {len(rows)} outings')
+    # The sheet also holds outings that haven't happened yet; they have no trip report
+    # and their scheduled hours aren't field time, so they don't belong in the stats.
+    today = date.today()
+    total = len(rows)
+    rows = [r for r in rows
+            if datetime.strptime(r['date'], '%m/%d/%Y').date() <= today]
+    print(f'  {len(rows)} outings ({total - len(rows)} upcoming, skipped)')
 
     # First page load establishes the eBird session cookie; API calls need it.
     get('https://ebird.org/tripreport')

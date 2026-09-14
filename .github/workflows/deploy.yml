@@ -4,9 +4,14 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["main"]
-  # Refresh eBird stats every Monday at 6:00 AM Eastern (10:00 UTC during daylight time).
+  # Refresh eBird stats every Monday. Times are UTC, so these land at 6:23 AM and
+  # 2:23 PM Eastern during daylight time, an hour earlier once EST starts.
+  # Deliberately off the top of the hour: GitHub queues every ":00" job in the world
+  # at once and silently drops schedules it can't get to. The afternoon run is a
+  # backstop in case the morning one is dropped; a second deploy costs nothing.
   schedule:
-    - cron: "0 10 * * 1"
+    - cron: "23 10 * * 1"
+    - cron: "23 18 * * 1"
   workflow_dispatch:
 
 permissions:

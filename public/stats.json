@@ -1,38 +1,38 @@
 {
-  "generated": "2026-08-31",
+  "generated": "2026-09-14",
   "since": "2025-06-23",
-  "outings": 55,
-  "reportsScraped": 55,
+  "outings": 56,
+  "reportsScraped": 56,
   "species": 187,
-  "checklists": 317,
-  "individuals": 26796,
-  "photos": 103,
-  "speciesWithPhotos": 48,
+  "checklists": 320,
+  "individuals": 27154,
+  "photos": 113,
+  "speciesWithPhotos": 53,
   "audio": 0,
   "speciesWithAudio": 0,
-  "birders": 13,
-  "locations": 189,
-  "hoursInField": 299,
+  "birders": 14,
+  "locations": 191,
+  "hoursInField": 306,
   "mostSeen": [
     {
       "name": "American Crow",
-      "outings": 52
+      "outings": 53
     },
     {
       "name": "American Herring Gull",
-      "outings": 50
+      "outings": 51
     },
     {
       "name": "Black-capped Chickadee",
-      "outings": 47
+      "outings": 48
     },
     {
       "name": "American Goldfinch",
-      "outings": 41
+      "outings": 42
     },
     {
       "name": "Song Sparrow",
-      "outings": 40
+      "outings": 41
     }
   ],
   "bestOuting": {
@@ -262,6 +262,10 @@
     "566010": {
       "species": 19,
       "checklists": 1
+    },
+    "570164": {
+      "species": 39,
+      "checklists": 3
     }
   },
   "reportList": [
@@ -649,6 +653,13 @@
       "date": "2026-08-25",
       "species": 19,
       "checklists": 1
+    },
+    {
+      "tripId": "570164",
+      "title": "YBC 56: Great Cranberry Island",
+      "date": "2026-09-07",
+      "species": 39,
+      "checklists": 3
     }
   ],
   "lifeList": [
