@@ -16,10 +16,11 @@ function tripIdFrom(url) {
 function reportRow(outing, reportStats) {
   const tripId = tripIdFrom(outing.tripReportUrl);
   const stats = tripId && reportStats[tripId];
+  // A linked report the scraper hasn't reached yet gets no badge until the next refresh.
   const badge = stats
     ? `<span class="report-badge">${esc(String(stats.species))} species · ${esc(String(stats.checklists))} ${stats.checklists === 1 ? 'checklist' : 'checklists'}</span>`
     : outing.tripReportUrl
-      ? '<span class="report-badge">eBird checklist</span>'
+      ? ''
       : '<span class="report-badge report-badge--pending">Report coming soon</span>';
 
   const title = outing.tripReportUrl
