@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hancock County Young Birders Club | YBC</title>
-    <meta name="description" content="Discover the Hancock County Young Birders Club (YBC), exploring nature and protecting birds in Maine." />
-    <link rel="stylesheet" href="./style.css" />
+    <title>About | Hancock County Young Birders Club</title>
+    <meta name="description" content="Free birding outings for Hancock County high schoolers, with transportation, binoculars, scopes, field guides, and ice cream provided. No experience needed." />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>">
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -14,7 +14,7 @@
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
           <span class="logo-mark" aria-hidden="true">🐦</span>
           <span class="logo-short" aria-hidden="true">YBC</span>
           <span class="logo-text">
@@ -27,7 +27,7 @@
           <nav class="main-nav" aria-label="Main">
             <a href="https://forms.gle/kpizSSjbhjwtRof4A" target="_blank" rel="noopener">Join</a>
             <a href="/rsvp/">RSVP</a>
-            <a href="/about/" class="nav-more">About</a>
+            <a href="/about/" class="nav-more" aria-current="page">About</a>
             <a href="/trip-reports/" class="nav-more">Trip Reports</a>
             <a href="/life-list/" class="nav-more">Life List</a>
             <a href="https://www.instagram.com/hc_youngbirdersclub/" class="nav-more" target="_blank" rel="noopener">Instagram</a>
@@ -43,7 +43,7 @@
         <button class="menu-close" type="button" aria-label="Close menu">&times;</button>
         <a href="https://forms.gle/kpizSSjbhjwtRof4A" target="_blank" rel="noopener">Join</a>
         <a href="/rsvp/">RSVP</a>
-        <a href="/about/">About</a>
+        <a href="/about/" aria-current="page">About</a>
         <a href="/trip-reports/">Trip Reports</a>
         <a href="/life-list/">Life List</a>
         <a href="https://www.instagram.com/hc_youngbirdersclub/" target="_blank" rel="noopener">Instagram</a>
@@ -53,47 +53,36 @@
       </nav>
     </header>
 
-    <main>
-      <!-- Hero: stats panel + Instagram -->
-      <section id="hero" class="hero">
-        <div class="stats-panel">
-          <div class="stats-heading">
-            <h1>Club Stats</h1>
-            <span id="stats-since" class="stats-since">Hancock County, Maine</span>
-          </div>
-          <div id="stats-grid" class="stats-grid">
-            <p class="stats-empty">Loading stats…</p>
-          </div>
-          <p id="stats-footnote" class="stats-footnote"></p>
-          <div class="stats-actions">
-            <a href="/rsvp/" class="stats-btn stats-btn--primary">RSVP for an Outing</a>
-            <a href="/trip-reports/" class="stats-btn">All Trip Reports</a>
-          </div>
+    <main class="reports-page">
+      <div class="reports-banner">
+        <div class="reports-inner">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a></nav>
+          <h1>About the Club</h1>
         </div>
+      </div>
 
-        <div class="hero-media">
-          <div class="insta-embed">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/hc_youngbirdersclub/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-              <div style="padding:16px;">
-                <a href="https://www.instagram.com/hc_youngbirdersclub/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                  <div style=" display: flex; flex-direction: row; align-items: center;">
-                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 40px; margin-right: 14px; width: 40px;"></div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </blockquote>
-            <script async src="//www.instagram.com/embed.js"></script>
-          </div>
-          <a href="https://www.instagram.com/hc_youngbirdersclub/" class="media-caption" target="_blank" rel="noopener">
-            <strong>Follow us on Instagram</strong> <span>@hc_youngbirdersclub</span>
-          </a>
+      <div class="reports-inner about">
+        <p class="about-lede">Free birding for Hancock County high schoolers.</p>
+
+        <p>The Young Birders Club is simple: most weekends, year-round, we pile into a 14-passenger bus and spend the day birding somewhere new. It&rsquo;s free, with binoculars, scopes, and field guides provided. Oh, and free ice cream.</p>
+
+        <h2>No experience needed</h2>
+        <p>Almost every YB (young birder) starts from scratch. Within a few weeks you&rsquo;ll be identifying dozens of birds by sight and sound, and before long you&rsquo;ll be helping newer members and occasionally doubting the leader&rsquo;s IDs.</p>
+
+        <h2>We go places you wouldn&rsquo;t go otherwise</h2>
+        <p>Deer Isle, Blue Hill, Ellsworth, MDI, and beyond. Sometimes by boat, to Great Duck Island, Hog Island, and Great Cranberry. We&rsquo;ve done hawk watches, an owl prowl after dark, and competed in birding competitions. We also learn that abandoned buildings, sewage ponds, and other people&rsquo;s feeders are all great places to find birds.</p>
+
+        <h2>As competitive as you make it</h2>
+        <p>Some YBs chase year lists and the eBird leaderboard. Others come for photography, or just to be outside with friends. Everyone learns that their checklists are real scientific data. And we don&rsquo;t take ourselves too seriously: skipping rocks and poking at jellyfish are part of the experience too.</p>
+
+        <h2>Come to as many outings as you like</h2>
+        <p>The club is for high school students and recent graduates. Outings are led by James Longo, a Downeast Audubon board member and University of Maine PhD candidate.</p>
+
+        <div class="about-actions">
+          <a href="https://forms.gle/kpizSSjbhjwtRof4A" class="about-btn about-btn--primary" target="_blank" rel="noopener">Join the Club</a>
+          <a href="/trip-reports/" class="about-btn">See Past Outings</a>
         </div>
-      </section>
-
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -102,7 +91,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/nav.js"></script>
-    <script type="module" src="/stats.js"></script>
+    <script type="module" src="../nav.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         tripReports: resolve(__dirname, 'trip-reports/index.html'),
+        about: resolve(__dirname, 'about/index.html'),
         lifeList: resolve(__dirname, 'life-list/index.html'),
         rsvp: resolve(__dirname, 'rsvp/index.html'),
       },
