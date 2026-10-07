@@ -6,6 +6,7 @@ import {
   readStore,
   writeStore,
   esc,
+  linkify,
   formatDateParts,
   MY_RSVP_KEY,
 } from './outings.js';
@@ -63,7 +64,7 @@ function outingCard(outing, myName) {
       <div class="outing-body">
         <h3>${esc(outing.title)}</h3>
         <p class="outing-meta">${meta}</p>
-        ${outing.description ? `<p class="outing-desc">${esc(outing.description)}</p>` : ''}
+        ${outing.description ? `<p class="outing-desc">${linkify(outing.description)}</p>` : ''}
         <div class="outing-attendees">
           <span class="attendee-count">${attendees.length} going</span>
           ${chips}

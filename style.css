@@ -918,6 +918,12 @@ body.menu-open {
 .outing-desc {
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
+  overflow-wrap: anywhere; /* long URLs wrap instead of spilling out of the card */
+}
+
+.outing-desc a {
+  color: var(--ebird-blue);
+  text-decoration: underline;
 }
 
 .outing-attendees {

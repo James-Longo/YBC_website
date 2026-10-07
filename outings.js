@@ -268,6 +268,23 @@ export function esc(text) {
   return div.innerHTML;
 }
 
+const URL_PATTERN = /\b(?:https?:\/\/|www\.)[^\s<>"]+/gi;
+
+/** Escape text and turn any http(s)/www URLs in it into links that open in a new tab. */
+export function linkify(text) {
+  let html = '';
+  let last = 0;
+  for (const match of text.matchAll(URL_PATTERN)) {
+    // Leave sentence punctuation after a URL ("see example.com.") out of the link.
+    const url = match[0].replace(/[.,;:!?)\]]+$/, '');
+    const href = /^https?:\/\//i.test(url) ? url : `https://${url}`;
+    html += esc(text.slice(last, match.index));
+    html += `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(url)}</a>`;
+    last = match.index + url.length;
+  }
+  return html + esc(text.slice(last));
+}
+
 /** Parse a YYYY-MM-DD sheet date as local noon, so no timezone can shift the day. */
 export function parseDate(dateStr) {
   const date = new Date(`${dateStr}T12:00:00`);
