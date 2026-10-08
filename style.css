@@ -128,6 +128,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.05rem;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -539,6 +540,17 @@ body.menu-open {
 
   .main-nav a {
     font-size: 0.9rem;
+  }
+}
+
+/* Keep the full desktop nav on one line between the hamburger breakpoint and wide screens. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .main-nav {
+    gap: 1rem;
+  }
+
+  .main-nav a {
+    font-size: 0.98rem;
   }
 }
 
@@ -1090,4 +1102,63 @@ body.menu-open {
 .about-btn--primary:hover {
   background: #2d6d3e;
   border-color: #2d6d3e;
+}
+
+/* ---------------- Gear discount page ---------------- */
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #f2fafd;
+  border: 1px solid #cfe4ee;
+  border-left: 5px solid var(--ebird-yellow);
+  border-radius: 6px;
+  padding: 1.25rem 1.25rem 1.4rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.promo-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6f6e67;
+}
+
+.promo-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.promo-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ebird-blue);
+  background: white;
+  border: 2px dashed var(--ebird-blue);
+  border-radius: 6px;
+  padding: 0.2rem 0.75rem;
+}
+
+.promo-copy {
+  font: inherit;
+  font-weight: 600;
+  color: var(--ebird-blue);
+  background: white;
+  border: 1px solid var(--ebird-blue);
+  border-radius: 4px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.promo-copy:hover {
+  background: var(--ebird-blue);
+  color: white;
 }
