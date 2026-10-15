@@ -348,7 +348,6 @@ body.menu-open {
 }
 
 .stats-actions {
-  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -379,6 +378,81 @@ body.menu-open {
   background: #2d6d3e;
   border-color: #2d6d3e;
   color: white;
+}
+
+/* Next outing (or, when none is scheduled, the latest trip report), grouped with the
+   buttons below it. */
+.next-outing {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  transition: background 0.2s ease;
+}
+
+.next-outing[hidden] {
+  display: none;
+}
+
+.next-outing:not([hidden]) + .stats-actions {
+  margin-top: 1.25rem;
+}
+
+.next-outing:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.next-outing-date {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 58px;
+  padding: 0.45rem 0;
+  border-radius: 8px;
+  background: white;
+  color: var(--ebird-blue);
+}
+
+.next-outing-month {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.next-outing-day {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.next-outing-body {
+  min-width: 0;
+}
+
+.next-outing-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+.next-outing-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.next-outing-meta {
+  font-size: 0.85rem;
+  opacity: 0.85;
 }
 
 /* The stats panel sets the hero's height; the embed is positioned absolutely so it
@@ -438,6 +512,40 @@ body.menu-open {
 
 .media-caption:hover strong {
   text-decoration: underline;
+}
+
+/* Desktop home page: stretch the hero so the page reaches the bottom of the screen,
+   with the footer pinned beneath it instead of floating mid-screen. */
+@media (min-width: 901px) {
+  body.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  body.home main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.home .hero {
+    flex: 1;
+  }
+
+  /* Like eBird's hero: keep the panel's content as one tight group and center it, so
+     extra height becomes even margin above and below rather than gaps inside it.
+     Tighter padding lets the whole page fit on a short, wide screen. */
+  body.home .stats-panel {
+    justify-content: center;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  body.home .site-footer {
+    padding: 1.25rem 0;
+  }
 }
 
 @media (max-width: 900px) {

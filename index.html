@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#385B75" />
   </head>
-  <body>
+  <body class="home">
     <header class="site-header">
       <div class="header-inner">
         <a href="#" class="logo">
@@ -67,6 +67,7 @@
             <p class="stats-empty">Loading stats…</p>
           </div>
           <p id="stats-footnote" class="stats-footnote"></p>
+          <a id="next-outing" class="next-outing" hidden></a>
           <div class="stats-actions">
             <a href="/rsvp/" class="stats-btn stats-btn--primary">RSVP for an Outing</a>
             <a href="/trip-reports/" class="stats-btn">All Trip Reports</a>
@@ -106,5 +107,6 @@
 
     <script type="module" src="/nav.js"></script>
     <script type="module" src="/stats.js"></script>
+    <script type="module" src="/next-outing.js"></script>
   </body>
 </html>
