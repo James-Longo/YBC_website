@@ -15,9 +15,8 @@ function render({ upcoming, past }) {
   }
 
   const { month, day, weekday } = formatDateParts(outing.date);
-  const going = (outing.attendees || []).length;
   const metaLines = next
-    ? [[weekday, outing.time], [outing.location && `📍 ${outing.location}`, going && `${going} going`]]
+    ? [[weekday, outing.time], [outing.location && `📍 ${outing.location}`]]
     : [[weekday, 'See what we found →']];
 
   card.href = next ? '/rsvp/' : outing.tripReportUrl;
